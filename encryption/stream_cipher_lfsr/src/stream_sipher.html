@@ -110,16 +110,16 @@
         <br>
 
         <div class="button-container">
-        <button class="button" type="button" id="encryptBtn">Зашифровать</button>
-        <button class="button" type="button" id="decryptBtn">Расшифровать</button>
-        <button class="button" type="button" id="downloadBtn">Скачать файл</button>
+            <button class="button" type="button" id="encryptBtn">Зашифровать</button>
+            <button class="button" type="button" id="decryptBtn">Расшифровать</button>
+            <button class="button" type="button" id="downloadBtn">Скачать файл</button>
         </div>
     </form>
 
     <h2><span class="text-gradient">Исходный файл (двоичный вид)</span></h2>
     <div id="originalFile" class="output"></div>
 
-    <h2><span class="text-gradient">Ключ (первые 100 бит)</span></h2>
+    <h2><span class="text-gradient">Ключ</span></h2>
     <div id="keyStream" class="output"></div>
 
     <h2><span class="text-gradient">Результат (двоичный вид)</span></h2>
@@ -276,10 +276,16 @@
     // Отображаем двоичные данные
     document.getElementById('originalFile').textContent = bytesToBinaryString(originalData);
 
-// Отображаем ключ (первые 100 бит или весь ключ, если он короче)
+    // Отображаем ключ (первые 50 бит ... последние 50 бит)
     const keyStream = lfsr.generateKeyStream(originalData.length * 8);
     const keyStreamStr = keyStream.join('');
-    document.getElementById('keyStream').textContent = keyStreamStr.length <= 100 ? keyStreamStr : keyStreamStr.slice(0, 100) + '...';
+    let displayedKeyStream;
+    if (keyStreamStr.length <= 100) {
+      displayedKeyStream = keyStreamStr;
+    } else {
+      displayedKeyStream = keyStreamStr.slice(0, 50) + ' ... ' + keyStreamStr.slice(-50);
+    }
+    document.getElementById('keyStream').textContent = displayedKeyStream;
 
     document.getElementById('processedFile').textContent = bytesToBinaryString(processedData);
   }
