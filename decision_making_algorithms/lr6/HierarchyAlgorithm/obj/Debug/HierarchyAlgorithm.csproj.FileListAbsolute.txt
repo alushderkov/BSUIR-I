@@ -1,0 +1,18 @@
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\HierarchyAlgorithm\bin\Debug\HierarchyAlgorithm.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\HierarchyAlgorithm\bin\Debug\HierarchyAlgorithm.pdb
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\HierarchyAlgorithm\obj\Debug\HierarchyAlgorithm.csproj.AssemblyReference.cache
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\HierarchyAlgorithm\obj\Debug\HierarchyAlgorithm.csproj.CoreCompileInputs.cache
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\HierarchyAlgorithm\obj\Debug\HierarchyAlgorithm.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\HierarchyAlgorithm\obj\Debug\HierarchyAlgorithm.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\HierarchyAlgorithm\bin\Debug\HierarchyAlgorithm.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\HierarchyAlgorithm\bin\Debug\HierarchyAlgorithm.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\HierarchyAlgorithm\obj\Debug\HierarchyAlgorithm.csproj.AssemblyReference.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\HierarchyAlgorithm\obj\Debug\HierarchyAlgorithm.csproj.CoreCompileInputs.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\HierarchyAlgorithm\obj\Debug\HierarchyAlgorithm.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\HierarchyAlgorithm\obj\Debug\HierarchyAlgorithm.pdb
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\HierarchyAlgorithm\bin\Debug\HierarchyAlgorithm.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\HierarchyAlgorithm\bin\Debug\HierarchyAlgorithm.pdb
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\HierarchyAlgorithm\obj\Debug\HierarchyAlgorithm.csproj.AssemblyReference.cache
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\HierarchyAlgorithm\obj\Debug\HierarchyAlgorithm.csproj.CoreCompileInputs.cache
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\HierarchyAlgorithm\obj\Debug\HierarchyAlgorithm.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\HierarchyAlgorithm\obj\Debug\HierarchyAlgorithm.pdb

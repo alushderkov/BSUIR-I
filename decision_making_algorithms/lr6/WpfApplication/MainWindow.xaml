@@ -1,0 +1,123 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="DMMaA_LAB_6.MainWindow"
+    xmlns:dataGrid2DLibrary="clr-namespace:DataGrid2DLibrary;assembly=DataGrid2DLibrary"
+    Title="DMMaA LAB 6" Height="600" Width="1200" MinHeight="600" MinWidth="1200"
+    Background="#FFE6F2FF" FontFamily="Segoe UI">
+
+	<Window.Resources>
+		<Style x:Key="TextBlockStyle">
+			<Setter Property="Control.FontFamily" Value="Segoe UI" />
+			<Setter Property="Control.VerticalAlignment" Value="Center" />
+			<Setter Property="TextBlock.TextAlignment" Value="Center" />
+			<Setter Property="TextBlock.Foreground" Value="#FF003366" />
+		</Style>
+
+		<Style x:Key="TextBoxStyle">
+			<Setter Property="TextBox.FontFamily" Value="Segoe UI" />
+			<Setter Property="TextBox.FontSize" Value="17" />
+			<Setter Property="TextBox.TextAlignment" Value="Center" />
+			<Setter Property="TextBox.VerticalAlignment" Value="Center" />
+			<Setter Property="Control.Margin" Value="5" />
+			<Setter Property="TextBox.Background" Value="#FFD9ECFF" />
+			<Setter Property="TextBox.Foreground" Value="#FF003366" />
+			<Setter Property="TextBox.BorderBrush" Value="#FF66B3FF" />
+			<Setter Property="TextBox.BorderThickness" Value="1" />
+			<Setter Property="TextBox.Height" Value="35" />
+			<!-- Увеличенная высота -->
+			<EventSetter Event="TextBox.PreviewTextInput" Handler="TextCheck" />
+		</Style>
+
+		<Style x:Key="ButtonStyle">
+			<Setter Property="Control.FontFamily" Value="Segoe UI Semibold" />
+			<Setter Property="Control.FontSize" Value="17" />
+			<Setter Property="Control.Background" Value="#FFB3D9FF" />
+			<Setter Property="Control.Foreground" Value="#FF003366" />
+			<Setter Property="Control.BorderBrush" Value="#FF66B3FF" />
+			<Setter Property="Control.BorderThickness" Value="1" />
+			<Setter Property="Control.Margin" Value="5" />
+			<Setter Property="Control.Padding" Value="10,8" />
+			<Setter Property="Button.Height" Value="40" />
+			<!-- Увеличенная высота -->
+		</Style>
+
+		<!-- Стиль DataGrid2D остается без изменений -->
+		<!-- ... -->
+	</Window.Resources>
+
+	<Grid Background="#FFE6F2FF">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+
+		<!-- Левая панель управления -->
+		<Border Grid.Column="0" BorderBrush="#FF66B3FF" BorderThickness="3" Background="#FFE6F2FF">
+			<Grid>
+				<!-- Увеличенные RowDefinitions -->
+				<Grid.RowDefinitions>
+					<RowDefinition Height="120" />
+					<!-- Увеличенная высота для Element Quantity -->
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+
+				<!-- Панель Element Quantity с увеличенными элементами -->
+				<Border Grid.Column="0" Grid.Row="0" BorderBrush="#FF66B3FF" BorderThickness="3" Background="#FFE6F2FF"
+                        Padding="5">
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="0.5*" />
+							<RowDefinition Height="*" />
+							<RowDefinition Height="*" />
+						</Grid.RowDefinitions>
+						<TextBlock Style="{StaticResource TextBlockStyle}" FontSize="20"
+                                   VerticalAlignment="Bottom">Element Quantity</TextBlock>
+						<TextBox Name="TextBoxElementsCount" Grid.Row="1" Style="{StaticResource TextBoxStyle}"
+                                 TextChanged="TextBoxElementsCount_OnTextChanged" />
+						<Button Grid.Row="2" Style="{StaticResource ButtonStyle}"
+                                Click="RandomDistanceButton_Click">
+							Random Numbers
+						</Button>
+					</Grid>
+				</Border>
+
+				<!-- Остальные элементы без изменений -->
+				<Border Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" BorderBrush="#FF66B3FF" BorderThickness="3" Background="#FFE6F2FF">
+					<dataGrid2DLibrary:DataGrid2D Name="DistancesDataGridView" UseModifiedDataGridStyle="True"
+                                                  ItemsSource2D="{Binding Distances}"
+                                                  BeginningEdit="DistancesDataGridView_OnBeginningEdit"
+                                                  CellEditEnding="DistancesDataGridView_OnCellEditEnding" />
+				</Border>
+
+				<Border Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" BorderBrush="#FF66B3FF" BorderThickness="3" Background="#FFE6F2FF">
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition />
+							<RowDefinition />
+							<RowDefinition />
+						</Grid.RowDefinitions>
+						<TextBlock Style="{StaticResource TextBlockStyle}" FontSize="20">Classification Criteria</TextBlock>
+						<Button Grid.Row="2" Style="{StaticResource ButtonStyle}" FontSize="20" Margin="5"
+                                Click="ButtonMinimum_OnClick">
+							Minimum
+						</Button>
+						<Button Grid.Row="1" Style="{StaticResource ButtonStyle}" FontSize="20" Margin="5"
+                                Click="ButtonMaximum_OnClick">
+							Maximum
+						</Button>
+					</Grid>
+				</Border>
+			</Grid>
+		</Border>
+
+		<!-- Правая панель с изображением без изменений -->
+		<Border Grid.Column="1" Grid.ColumnSpan="2" BorderBrush="#FF66B3FF" BorderThickness="3" Background="#FFE6F2FF">
+			<Image x:Name="ResultImage" />
+		</Border>
+	</Grid>
+</Window>

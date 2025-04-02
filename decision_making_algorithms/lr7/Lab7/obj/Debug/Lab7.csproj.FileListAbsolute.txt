@@ -1,0 +1,68 @@
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\bin\Debug\Lab7.exe.config
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\bin\Debug\Lab7.exe
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\bin\Debug\Lab7.pdb
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\bin\Debug\Syntax.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\bin\Debug\Syntax.pdb
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.csproj.AssemblyReference.cache
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\MainWindow.baml
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\MainWindow.g.cs
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\App.g.cs
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7_MarkupCompile.cache
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.g.resources
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.Properties.Resources.resources
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.csproj.GenerateResource.cache
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.csproj.CoreCompileInputs.cache
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.csproj.CopyComplete
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.exe
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\bin\Debug\Lab7.exe.config
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\bin\Debug\Lab7.exe
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\bin\Debug\Lab7.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\bin\Debug\Syntax.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\bin\Debug\Syntax.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.csproj.AssemblyReference.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\MainWindow.baml
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\MainWindow.g.cs
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\App.g.cs
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7_MarkupCompile.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.g.resources
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.Properties.Resources.resources
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.csproj.GenerateResource.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.csproj.CoreCompileInputs.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.csproj.CopyComplete
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.exe
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_7\Lab7\Lab7\obj\Debug\Lab7.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\bin\Debug\Lab7.exe.config
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\bin\Debug\Lab7.exe
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\bin\Debug\Lab7.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\bin\Debug\Syntax.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\bin\Debug\Syntax.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\obj\Debug\Lab7.csproj.AssemblyReference.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\obj\Debug\MainWindow.baml
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\obj\Debug\MainWindow.g.cs
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\obj\Debug\App.g.cs
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\obj\Debug\Lab7_MarkupCompile.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\obj\Debug\Lab7.g.resources
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\obj\Debug\Lab7.Properties.Resources.resources
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\obj\Debug\Lab7.csproj.GenerateResource.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\obj\Debug\Lab7.csproj.CoreCompileInputs.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\obj\Debug\Lab7.csproj.CopyComplete
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\obj\Debug\Lab7.exe
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба7\Lab7\obj\Debug\Lab7.pdb
+D:\bsuir\decision_making_algorithms\lr7\Lab7\bin\Debug\Lab7.exe.config
+D:\bsuir\decision_making_algorithms\lr7\Lab7\bin\Debug\Lab7.exe
+D:\bsuir\decision_making_algorithms\lr7\Lab7\bin\Debug\Lab7.pdb
+D:\bsuir\decision_making_algorithms\lr7\Lab7\bin\Debug\Syntax.dll
+D:\bsuir\decision_making_algorithms\lr7\Lab7\bin\Debug\Syntax.pdb
+D:\bsuir\decision_making_algorithms\lr7\Lab7\obj\Debug\Lab7.csproj.AssemblyReference.cache
+D:\bsuir\decision_making_algorithms\lr7\Lab7\obj\Debug\MainWindow.baml
+D:\bsuir\decision_making_algorithms\lr7\Lab7\obj\Debug\MainWindow.g.cs
+D:\bsuir\decision_making_algorithms\lr7\Lab7\obj\Debug\App.g.cs
+D:\bsuir\decision_making_algorithms\lr7\Lab7\obj\Debug\Lab7_MarkupCompile.cache
+D:\bsuir\decision_making_algorithms\lr7\Lab7\obj\Debug\Lab7.g.resources
+D:\bsuir\decision_making_algorithms\lr7\Lab7\obj\Debug\Lab7.Properties.Resources.resources
+D:\bsuir\decision_making_algorithms\lr7\Lab7\obj\Debug\Lab7.csproj.GenerateResource.cache
+D:\bsuir\decision_making_algorithms\lr7\Lab7\obj\Debug\Lab7.csproj.CoreCompileInputs.cache
+D:\bsuir\decision_making_algorithms\lr7\Lab7\obj\Debug\Lab7.csproj.Up2Date
+D:\bsuir\decision_making_algorithms\lr7\Lab7\obj\Debug\Lab7.exe
+D:\bsuir\decision_making_algorithms\lr7\Lab7\obj\Debug\Lab7.pdb

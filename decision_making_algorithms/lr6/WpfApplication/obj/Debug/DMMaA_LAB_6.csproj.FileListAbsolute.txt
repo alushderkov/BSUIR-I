@@ -1,0 +1,170 @@
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\WpfApplication.exe.config
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\WpfApplication.exe
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\WpfApplication.pdb
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\DataGrid2DLibrary.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\HierarchyAlgorithm.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\HierarchyAlgorithm.pdb
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.AssemblyReference.cache
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\obj\Debug\MainWindow.baml
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\obj\Debug\MainWindow.g.cs
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\obj\Debug\App.g.cs
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\obj\Debug\WpfApplication_MarkupCompile.cache
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\obj\Debug\WpfApplication.g.resources
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\obj\Debug\WpfApplication.Properties.Resources.resources
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.GenerateResource.cache
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.CoreCompileInputs.cache
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.CopyComplete
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\obj\Debug\WpfApplication.exe
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_6\WpfApplication\obj\Debug\WpfApplication.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\WpfApplication.exe.config
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\WpfApplication.exe
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\WpfApplication.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\DataGrid2DLibrary.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\HierarchyAlgorithm.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\Xceed.Wpf.DataGrid.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\HierarchyAlgorithm.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.AssemblyReference.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\obj\Debug\MainWindow.baml
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\obj\Debug\MainWindow.g.cs
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\obj\Debug\App.g.cs
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\obj\Debug\WpfApplication_MarkupCompile.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\obj\Debug\WpfApplication.g.resources
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\obj\Debug\WpfApplication.Properties.Resources.resources
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.GenerateResource.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.CoreCompileInputs.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.CopyComplete
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\obj\Debug\WpfApplication.exe
+D:\БГУИР\3 курс\6 семестр\МиАПР\Прочие\DMMaA_LAB_6\WpfApplication\obj\Debug\WpfApplication.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\WpfApplication.exe.config
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\WpfApplication.exe
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\WpfApplication.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\DataGrid2DLibrary.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\HierarchyAlgorithm.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\Xceed.Wpf.DataGrid.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\HierarchyAlgorithm.pdb
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.AssemblyReference.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\obj\Debug\MainWindow.baml
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\obj\Debug\MainWindow.g.cs
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\obj\Debug\App.g.cs
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\obj\Debug\WpfApplication_MarkupCompile.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\obj\Debug\WpfApplication.g.resources
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\obj\Debug\WpfApplication.Properties.Resources.resources
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.GenerateResource.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.CoreCompileInputs.cache
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.CopyComplete
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\obj\Debug\WpfApplication.exe
+D:\БГУИР\3 курс\6 семестр\МиАПР\Лабораторные\Лаба6\WpfApplication\obj\Debug\WpfApplication.pdb
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\WpfApplication.exe.config
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\WpfApplication.exe
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\WpfApplication.pdb
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\DataGrid2DLibrary.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\HierarchyAlgorithm.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\Xceed.Wpf.DataGrid.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\HierarchyAlgorithm.pdb
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.AssemblyReference.cache
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\obj\Debug\MainWindow.baml
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\obj\Debug\MainWindow.g.cs
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\obj\Debug\App.g.cs
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\obj\Debug\WpfApplication_MarkupCompile.cache
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\obj\Debug\WpfApplication.g.resources
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\obj\Debug\WpfApplication.Properties.Resources.resources
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.GenerateResource.cache
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.CoreCompileInputs.cache
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\obj\Debug\DMMaA_LA.D6F9CE85.Up2Date
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\obj\Debug\WpfApplication.exe
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба6\WpfApplication\obj\Debug\WpfApplication.pdb
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\WpfApplication.exe.config
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\WpfApplication.exe
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\WpfApplication.pdb
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\DataGrid2DLibrary.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\HierarchyAlgorithm.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\Xceed.Wpf.DataGrid.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\HierarchyAlgorithm.pdb
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.AssemblyReference.cache
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\obj\Debug\MainWindow.baml
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\obj\Debug\MainWindow.g.cs
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\obj\Debug\App.g.cs
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\obj\Debug\WpfApplication_MarkupCompile.cache
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\obj\Debug\WpfApplication.g.resources
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\obj\Debug\WpfApplication.Properties.Resources.resources
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.GenerateResource.cache
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\obj\Debug\DMMaA_LAB_6.csproj.CoreCompileInputs.cache
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\obj\Debug\DMMaA_LA.D6F9CE85.Up2Date
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\obj\Debug\WpfApplication.exe
+D:\bsuir\decision_making_algorithms\lr6\WpfApplication\obj\Debug\WpfApplication.pdb
