@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\bsuir\\decision_making_algorithms\\lr6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4A0A3E-4C17-4F6E-A63C-D35E06072D35}|HierarchyAlgorithm\\HierarchyAlgorithm.csproj|d:\\bsuir\\decision_making_algorithms\\lr6\\hierarchyalgorithm\\hierarchy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4A0A3E-4C17-4F6E-A63C-D35E06072D35}|HierarchyAlgorithm\\HierarchyAlgorithm.csproj|solutionrelative:hierarchyalgorithm\\hierarchy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4A0A3E-4C17-4F6E-A63C-D35E06072D35}|HierarchyAlgorithm\\HierarchyAlgorithm.csproj|D:\\bsuir\\decision_making_algorithms\\lr6\\hierarchyalgorithm\\invertmaxhierarchy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4A0A3E-4C17-4F6E-A63C-D35E06072D35}|HierarchyAlgorithm\\HierarchyAlgorithm.csproj|solutionrelative:hierarchyalgorithm\\invertmaxhierarchy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4A0A3E-4C17-4F6E-A63C-D35E06072D35}|HierarchyAlgorithm\\HierarchyAlgorithm.csproj|D:\\bsuir\\decision_making_algorithms\\lr6\\hierarchyalgorithm\\tableelement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4A0A3E-4C17-4F6E-A63C-D35E06072D35}|HierarchyAlgorithm\\HierarchyAlgorithm.csproj|solutionrelative:hierarchyalgorithm\\tableelement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4A0A3E-4C17-4F6E-A63C-D35E06072D35}|HierarchyAlgorithm\\HierarchyAlgorithm.csproj|D:\\bsuir\\decision_making_algorithms\\lr6\\hierarchyalgorithm\\maxhierarchy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4A0A3E-4C17-4F6E-A63C-D35E06072D35}|HierarchyAlgorithm\\HierarchyAlgorithm.csproj|solutionrelative:hierarchyalgorithm\\maxhierarchy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4A0A3E-4C17-4F6E-A63C-D35E06072D35}|HierarchyAlgorithm\\HierarchyAlgorithm.csproj|D:\\bsuir\\decision_making_algorithms\\lr6\\hierarchyalgorithm\\minhierarchy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4A0A3E-4C17-4F6E-A63C-D35E06072D35}|HierarchyAlgorithm\\HierarchyAlgorithm.csproj|solutionrelative:hierarchyalgorithm\\minhierarchy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4A0A3E-4C17-4F6E-A63C-D35E06072D35}|HierarchyAlgorithm\\HierarchyAlgorithm.csproj|D:\\bsuir\\decision_making_algorithms\\lr6\\hierarchyalgorithm\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4A0A3E-4C17-4F6E-A63C-D35E06072D35}|HierarchyAlgorithm\\HierarchyAlgorithm.csproj|solutionrelative:hierarchyalgorithm\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MaxHierarchy.cs",
+              "DocumentMoniker": "D:\\bsuir\\decision_making_algorithms\\lr6\\HierarchyAlgorithm\\MaxHierarchy.cs",
+              "RelativeDocumentMoniker": "HierarchyAlgorithm\\MaxHierarchy.cs",
+              "ToolTip": "D:\\bsuir\\decision_making_algorithms\\lr6\\HierarchyAlgorithm\\MaxHierarchy.cs",
+              "RelativeToolTip": "HierarchyAlgorithm\\MaxHierarchy.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T07:20:51.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MinHierarchy.cs",
+              "DocumentMoniker": "D:\\bsuir\\decision_making_algorithms\\lr6\\HierarchyAlgorithm\\MinHierarchy.cs",
+              "RelativeDocumentMoniker": "HierarchyAlgorithm\\MinHierarchy.cs",
+              "ToolTip": "D:\\bsuir\\decision_making_algorithms\\lr6\\HierarchyAlgorithm\\MinHierarchy.cs",
+              "RelativeToolTip": "HierarchyAlgorithm\\MinHierarchy.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T07:20:47.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Line.cs",
+              "DocumentMoniker": "D:\\bsuir\\decision_making_algorithms\\lr6\\HierarchyAlgorithm\\Line.cs",
+              "RelativeDocumentMoniker": "HierarchyAlgorithm\\Line.cs",
+              "ToolTip": "D:\\bsuir\\decision_making_algorithms\\lr6\\HierarchyAlgorithm\\Line.cs",
+              "RelativeToolTip": "HierarchyAlgorithm\\Line.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T07:20:41.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InvertMaxHierarchy.cs",
+              "DocumentMoniker": "D:\\bsuir\\decision_making_algorithms\\lr6\\HierarchyAlgorithm\\InvertMaxHierarchy.cs",
+              "RelativeDocumentMoniker": "HierarchyAlgorithm\\InvertMaxHierarchy.cs",
+              "ToolTip": "D:\\bsuir\\decision_making_algorithms\\lr6\\HierarchyAlgorithm\\InvertMaxHierarchy.cs",
+              "RelativeToolTip": "HierarchyAlgorithm\\InvertMaxHierarchy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T07:20:15.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Hierarchy.cs",
+              "DocumentMoniker": "D:\\bsuir\\decision_making_algorithms\\lr6\\HierarchyAlgorithm\\Hierarchy.cs",
+              "RelativeDocumentMoniker": "HierarchyAlgorithm\\Hierarchy.cs",
+              "ToolTip": "D:\\bsuir\\decision_making_algorithms\\lr6\\HierarchyAlgorithm\\Hierarchy.cs",
+              "RelativeToolTip": "HierarchyAlgorithm\\Hierarchy.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAwwO8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T07:20:13.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TableElement.cs",
+              "DocumentMoniker": "D:\\bsuir\\decision_making_algorithms\\lr6\\HierarchyAlgorithm\\TableElement.cs",
+              "RelativeDocumentMoniker": "HierarchyAlgorithm\\TableElement.cs",
+              "ToolTip": "D:\\bsuir\\decision_making_algorithms\\lr6\\HierarchyAlgorithm\\TableElement.cs",
+              "RelativeToolTip": "HierarchyAlgorithm\\TableElement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T07:20:55.027Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

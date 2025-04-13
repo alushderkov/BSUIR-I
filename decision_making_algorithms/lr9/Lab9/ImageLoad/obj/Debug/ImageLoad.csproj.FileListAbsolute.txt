@@ -1,0 +1,24 @@
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_9\Lab9\ImageLoad\bin\Debug\ImageLoad.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_9\Lab9\ImageLoad\bin\Debug\ImageLoad.pdb
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_9\Lab9\ImageLoad\obj\Debug\ImageLoad.csproj.AssemblyReference.cache
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_9\Lab9\ImageLoad\obj\Debug\ImageLoad.csproj.CoreCompileInputs.cache
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_9\Lab9\ImageLoad\obj\Debug\ImageLoad.dll
+C:\Users\Sanya\Desktop\МиАПР лабы\DMMaA_LAB_9\Lab9\ImageLoad\obj\Debug\ImageLoad.pdb
+D:\БГУИР\Прочее\3 курс\кал с 6-ого сема\МиАПР лабы\DMMaA_LAB_9\Lab9\ImageLoad\bin\Debug\ImageLoad.dll
+D:\БГУИР\Прочее\3 курс\кал с 6-ого сема\МиАПР лабы\DMMaA_LAB_9\Lab9\ImageLoad\bin\Debug\ImageLoad.pdb
+D:\БГУИР\Прочее\3 курс\кал с 6-ого сема\МиАПР лабы\DMMaA_LAB_9\Lab9\ImageLoad\obj\Debug\ImageLoad.csproj.AssemblyReference.cache
+D:\БГУИР\Прочее\3 курс\кал с 6-ого сема\МиАПР лабы\DMMaA_LAB_9\Lab9\ImageLoad\obj\Debug\ImageLoad.csproj.CoreCompileInputs.cache
+D:\БГУИР\Прочее\3 курс\кал с 6-ого сема\МиАПР лабы\DMMaA_LAB_9\Lab9\ImageLoad\obj\Debug\ImageLoad.dll
+D:\БГУИР\Прочее\3 курс\кал с 6-ого сема\МиАПР лабы\DMMaA_LAB_9\Lab9\ImageLoad\obj\Debug\ImageLoad.pdb
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба9\Lab9\ImageLoad\bin\Debug\ImageLoad.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба9\Lab9\ImageLoad\bin\Debug\ImageLoad.pdb
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба9\Lab9\ImageLoad\obj\Debug\ImageLoad.csproj.AssemblyReference.cache
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба9\Lab9\ImageLoad\obj\Debug\ImageLoad.csproj.CoreCompileInputs.cache
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба9\Lab9\ImageLoad\obj\Debug\ImageLoad.dll
+D:\bsuir\decision_making_algorithms\old\Лабораторные\Лаба9\Lab9\ImageLoad\obj\Debug\ImageLoad.pdb
+D:\bsuir\decision_making_algorithms\lr9\Lab9\ImageLoad\bin\Debug\ImageLoad.dll
+D:\bsuir\decision_making_algorithms\lr9\Lab9\ImageLoad\bin\Debug\ImageLoad.pdb
+D:\bsuir\decision_making_algorithms\lr9\Lab9\ImageLoad\obj\Debug\ImageLoad.csproj.AssemblyReference.cache
+D:\bsuir\decision_making_algorithms\lr9\Lab9\ImageLoad\obj\Debug\ImageLoad.csproj.CoreCompileInputs.cache
+D:\bsuir\decision_making_algorithms\lr9\Lab9\ImageLoad\obj\Debug\ImageLoad.dll
+D:\bsuir\decision_making_algorithms\lr9\Lab9\ImageLoad\obj\Debug\ImageLoad.pdb
