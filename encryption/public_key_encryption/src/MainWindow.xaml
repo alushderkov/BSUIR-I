@@ -1,0 +1,203 @@
+﻿<Window x:Class="Lab3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab3"
+        mc:Ignorable="d"
+        Title="Cryptographic systems with a public key" Height="719" Width="900"
+        Background="#FF1E1E1E" Foreground="White">
+
+	<Window.Resources>
+		<LinearGradientBrush x:Key="BlueGradientBrush" StartPoint="0,0" EndPoint="0,1">
+			<GradientStop Color="#FF00B4FF" Offset="0"/>
+			<GradientStop Color="#FF0078D4" Offset="1"/>
+		</LinearGradientBrush>
+
+		<LinearGradientBrush x:Key="BlueGradientBrushHover" StartPoint="0,0" EndPoint="0,1">
+			<GradientStop Color="#FF00C6FF" Offset="0"/>
+			<GradientStop Color="#FF0086E5" Offset="1"/>
+		</LinearGradientBrush>
+
+		<LinearGradientBrush x:Key="BlueGradientBrushPressed" StartPoint="0,0" EndPoint="0,1">
+			<GradientStop Color="#FF0095D9" Offset="0"/>
+			<GradientStop Color="#FF006BBF" Offset="1"/>
+		</LinearGradientBrush>
+
+		<Style TargetType="Border">
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="BorderBrush" Value="#FF3E3E3E"/>
+		</Style>
+
+		<Style x:Key="RoundedBorderStyle" TargetType="Border">
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="BorderBrush" Value="#FF3E3E3E"/>
+			<Setter Property="Background" Value="#FF252525"/>
+			<Setter Property="CornerRadius" Value="4"/>
+			<Setter Property="Padding" Value="0"/>
+		</Style>
+
+		<Style TargetType="Button">
+			<Setter Property="Background" Value="{StaticResource BlueGradientBrush}"/>
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="BorderBrush" Value="#FF0078D4"/>
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="FontSize" Value="14"/>
+			<Setter Property="Padding" Value="10,5"/>
+			<Setter Property="MinHeight" Value="31"/>
+			<Setter Property="Margin" Value="0,5"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Border x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="4">
+							<ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+						</Border>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsMouseOver" Value="True">
+								<Setter Property="Background" Value="{StaticResource BlueGradientBrushHover}"/>
+							</Trigger>
+							<Trigger Property="IsPressed" Value="True">
+								<Setter Property="Background" Value="{StaticResource BlueGradientBrushPressed}"/>
+							</Trigger>
+							<Trigger Property="IsEnabled" Value="False">
+								<Setter Property="Background" Value="#FF3A3A3A"/>
+								<Setter Property="BorderBrush" Value="#FF2D2D2D"/>
+								<Setter Property="Foreground" Value="#FF7A7A7A"/>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<Style TargetType="TextBox">
+			<Setter Property="Background" Value="#FF252525"/>
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="BorderBrush" Value="#FF3E3E3E"/>
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="CaretBrush" Value="White"/>
+			<Setter Property="Padding" Value="5"/>
+			<Setter Property="Margin" Value="0,0,0,5"/>
+			<Setter Property="MinHeight" Value="30"/>
+		</Style>
+
+		<Style TargetType="RadioButton">
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="FontSize" Value="14"/>
+			<Setter Property="Margin" Value="0,10"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="RadioButton">
+						<StackPanel Orientation="Horizontal">
+							<Grid Width="16" Height="16" Margin="0,0,5,0">
+								<Ellipse x:Name="outerEllipse" Stroke="#FF0078D4" StrokeThickness="1" Fill="#FF252525"/>
+								<Ellipse x:Name="innerEllipse" Margin="4" Fill="{StaticResource BlueGradientBrush}" Visibility="Collapsed"/>
+							</Grid>
+							<ContentPresenter VerticalAlignment="Center"/>
+						</StackPanel>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsChecked" Value="True">
+								<Setter TargetName="innerEllipse" Property="Visibility" Value="Visible"/>
+							</Trigger>
+							<Trigger Property="IsMouseOver" Value="True">
+								<Setter TargetName="outerEllipse" Property="Stroke" Value="#FF00B4FF"/>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<Style TargetType="Label">
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="FontSize" Value="14"/>
+			<Setter Property="Margin" Value="0,5"/>
+		</Style>
+	</Window.Resources>
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="2*"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<!-- Data Panel (now on top) -->
+		<Grid Grid.Row="0" Background="#FF252525" Margin="5">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+
+			<!-- Source Data -->
+			<Border Grid.Column="0" Margin="5" Style="{StaticResource RoundedBorderStyle}">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="*"/>
+					</Grid.RowDefinitions>
+
+					<Label Content="Исходные данные" FontSize="14" HorizontalAlignment="Center" Grid.Row="0"/>
+					<TextBox x:Name="TbSource" IsReadOnly="True" Margin="5" Grid.Row="1" AcceptsReturn="True"
+                             TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                             TextChanged="tb_input_TextChanged" Background="#FF1E1E1E"/>
+				</Grid>
+			</Border>
+
+			<!-- Result Data -->
+			<Border Grid.Column="1" Margin="5" Style="{StaticResource RoundedBorderStyle}">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="*"/>
+					</Grid.RowDefinitions>
+
+					<Label Content="Результат" FontSize="14" HorizontalAlignment="Center" Grid.Row="0"/>
+					<TextBox x:Name="TbResult" IsReadOnly="True" Margin="5" Grid.Row="1" AcceptsReturn="True"
+                             TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Background="#FF1E1E1E"/>
+				</Grid>
+			</Border>
+		</Grid>
+
+		<!-- Controllers Panel (now at bottom) -->
+		<Border Grid.Row="1" Background="#FF252525" Margin="5" Style="{StaticResource RoundedBorderStyle}">
+			<Grid Margin="10,0,10,0">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+
+				<!-- Input Fields -->
+				<StackPanel Grid.Column="0" VerticalAlignment="Top">
+					<Label Content="Введите p"/>
+					<TextBox x:Name="TbInputP" TextChanged="tb_input_TextChanged" PreviewTextInput="tb_input_PreviewTextInput" PreviewKeyDown="tb_input_PreviewKeyDown"/>
+
+					<Label Content="Введите q"/>
+					<TextBox x:Name="TbInputQ" TextChanged="tb_input_TextChanged" PreviewTextInput="tb_input_PreviewTextInput" PreviewKeyDown="tb_input_PreviewKeyDown"/>
+
+					<Label Content='Введите b'/>
+					<TextBox x:Name="TbInputB" TextChanged="tb_input_TextChanged" PreviewTextInput="tb_input_PreviewTextInput" PreviewKeyDown="tb_input_PreviewKeyDown"/>
+				</StackPanel>
+
+				<!-- Radio Buttons and Execute -->
+				<StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top">
+					<RadioButton x:Name="RbCrypto" Content="Шифровать" IsChecked="True"/>
+					<RadioButton x:Name="RbDecrypt" Content="Дешифрировать"/>
+					<Button x:Name="BtnExecute" IsEnabled="False" Content="Выполнить" Width="165" Margin="0,20" Click="btn_execute_Click"/>
+				</StackPanel>
+
+				<!-- File Operations -->
+				<StackPanel Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+					<Button x:Name="BtnOpenSimpleFile" Content="Открыть обычный файл" Width="225" Click="BtnOpenSimpleFile_OnClick"/>
+					<Button x:Name="BtnOpenEncryptedFile" Content="Открыть зашифрованный файл" Width="225" Click="BtnOpenEncryptedFile_OnClick"/>
+					<Button x:Name="BtnSaveFile" Content="Сохранить обычный файл" Width="225" Click="BtnSaveFile_OnClick"/>
+					<Button x:Name="BtnSaveEncryptedFile" Content="Сохранить зашифрованный файл" Width="225" Click="BtnSaveEncryptedFile_OnClick"/>
+				</StackPanel>
+			</Grid>
+		</Border>
+	</Grid>
+</Window>

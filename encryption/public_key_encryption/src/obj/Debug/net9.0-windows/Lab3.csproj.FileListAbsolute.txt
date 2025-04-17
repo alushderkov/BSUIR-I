@@ -1,0 +1,124 @@
+D:\BSUIR\year2\part2\TI\Labs\Lab3\bin\Debug\net9.0-windows\Lab3.exe
+D:\BSUIR\year2\part2\TI\Labs\Lab3\bin\Debug\net9.0-windows\Lab3.deps.json
+D:\BSUIR\year2\part2\TI\Labs\Lab3\bin\Debug\net9.0-windows\Lab3.runtimeconfig.json
+D:\BSUIR\year2\part2\TI\Labs\Lab3\bin\Debug\net9.0-windows\Lab3.dll
+D:\BSUIR\year2\part2\TI\Labs\Lab3\bin\Debug\net9.0-windows\Lab3.pdb
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\MainWindow.g.cs
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\App.g.cs
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\Lab3_MarkupCompile.cache
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\Lab3_MarkupCompile.lref
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\MainWindow.baml
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\Lab3.g.resources
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\Lab3.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\Lab3.AssemblyInfoInputs.cache
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\Lab3.AssemblyInfo.cs
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\Lab3.csproj.CoreCompileInputs.cache
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\Lab3.dll
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\refint\Lab3.dll
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\Lab3.pdb
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\Lab3.genruntimeconfig.cache
+D:\BSUIR\year2\part2\TI\Labs\Lab3\obj\Debug\net9.0-windows\ref\Lab3.dll
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\bin\Debug\net9.0-windows\Lab3.exe
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\bin\Debug\net9.0-windows\Lab3.deps.json
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\bin\Debug\net9.0-windows\Lab3.runtimeconfig.json
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\bin\Debug\net9.0-windows\Lab3.dll
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\bin\Debug\net9.0-windows\Lab3.pdb
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\MainWindow.g.cs
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\App.g.cs
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\Lab3_MarkupCompile.cache
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\Lab3_MarkupCompile.lref
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\MainWindow.baml
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\Lab3.g.resources
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\Lab3.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\Lab3.AssemblyInfoInputs.cache
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\Lab3.AssemblyInfo.cs
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\Lab3.csproj.CoreCompileInputs.cache
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\Lab3.sourcelink.json
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\Lab3.dll
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\refint\Lab3.dll
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\Lab3.pdb
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\Lab3.genruntimeconfig.cache
+D:\BSUIR\year2\part2\Ti\Ti\Code\Lab3\obj\Debug\net9.0-windows\ref\Lab3.dll
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\bin\Debug\net9.0-windows\Lab3.exe
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\bin\Debug\net9.0-windows\Lab3.deps.json
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\bin\Debug\net9.0-windows\Lab3.runtimeconfig.json
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\bin\Debug\net9.0-windows\Lab3.dll
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\bin\Debug\net9.0-windows\Lab3.pdb
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\Lab3_MarkupCompile.cache
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\Lab3_MarkupCompile.lref
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\Lab3.g.resources
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\Lab3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\Lab3.AssemblyInfoInputs.cache
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\Lab3.AssemblyInfo.cs
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\Lab3.dll
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\refint\Lab3.dll
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\Lab3.pdb
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\Lab3.genruntimeconfig.cache
+C:\Users\PC\Downloads\Ti-main\Code\Lab3\obj\Debug\net9.0-windows\ref\Lab3.dll
+D:\for_boltak\Code\Lab3\bin\Debug\net9.0-windows\Lab3.exe
+D:\for_boltak\Code\Lab3\bin\Debug\net9.0-windows\Lab3.deps.json
+D:\for_boltak\Code\Lab3\bin\Debug\net9.0-windows\Lab3.runtimeconfig.json
+D:\for_boltak\Code\Lab3\bin\Debug\net9.0-windows\Lab3.dll
+D:\for_boltak\Code\Lab3\bin\Debug\net9.0-windows\Lab3.pdb
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\MainWindow.g.cs
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\App.g.cs
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\Lab3_MarkupCompile.cache
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\Lab3_MarkupCompile.lref
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\MainWindow.baml
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\Lab3.g.resources
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\Lab3.GeneratedMSBuildEditorConfig.editorconfig
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\Lab3.AssemblyInfoInputs.cache
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\Lab3.AssemblyInfo.cs
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\Lab3.csproj.CoreCompileInputs.cache
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\Lab3.sourcelink.json
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\Lab3.dll
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\refint\Lab3.dll
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\Lab3.pdb
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\Lab3.genruntimeconfig.cache
+D:\for_boltak\Code\Lab3\obj\Debug\net9.0-windows\ref\Lab3.dll
+D:\bsuir\encryption\Новая папка\src\Lab3\bin\Debug\net9.0-windows\Lab3.exe
+D:\bsuir\encryption\Новая папка\src\Lab3\bin\Debug\net9.0-windows\Lab3.deps.json
+D:\bsuir\encryption\Новая папка\src\Lab3\bin\Debug\net9.0-windows\Lab3.runtimeconfig.json
+D:\bsuir\encryption\Новая папка\src\Lab3\bin\Debug\net9.0-windows\Lab3.dll
+D:\bsuir\encryption\Новая папка\src\Lab3\bin\Debug\net9.0-windows\Lab3.pdb
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\MainWindow.g.cs
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\App.g.cs
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\Lab3_MarkupCompile.cache
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\Lab3_MarkupCompile.lref
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\MainWindow.baml
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\Lab3.g.resources
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\Lab3.GeneratedMSBuildEditorConfig.editorconfig
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\Lab3.AssemblyInfoInputs.cache
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\Lab3.AssemblyInfo.cs
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\Lab3.csproj.CoreCompileInputs.cache
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\Lab3.sourcelink.json
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\Lab3.dll
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\refint\Lab3.dll
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\Lab3.pdb
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\Lab3.genruntimeconfig.cache
+D:\bsuir\encryption\Новая папка\src\Lab3\obj\Debug\net9.0-windows\ref\Lab3.dll
+D:\bsuir\encryption\Новая папка\src\bin\Debug\net9.0-windows\Lab3.exe
+D:\bsuir\encryption\Новая папка\src\bin\Debug\net9.0-windows\Lab3.deps.json
+D:\bsuir\encryption\Новая папка\src\bin\Debug\net9.0-windows\Lab3.runtimeconfig.json
+D:\bsuir\encryption\Новая папка\src\bin\Debug\net9.0-windows\Lab3.dll
+D:\bsuir\encryption\Новая папка\src\bin\Debug\net9.0-windows\Lab3.pdb
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\MainWindow.g.cs
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\App.g.cs
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\Lab3_MarkupCompile.cache
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\Lab3_MarkupCompile.lref
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\MainWindow.baml
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\Lab3.g.resources
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\Lab3.GeneratedMSBuildEditorConfig.editorconfig
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\Lab3.AssemblyInfoInputs.cache
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\Lab3.AssemblyInfo.cs
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\Lab3.csproj.CoreCompileInputs.cache
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\Lab3.sourcelink.json
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\Lab3.dll
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\refint\Lab3.dll
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\Lab3.pdb
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\Lab3.genruntimeconfig.cache
+D:\bsuir\encryption\Новая папка\src\obj\Debug\net9.0-windows\ref\Lab3.dll
