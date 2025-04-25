@@ -6,42 +6,68 @@
         body { font-family: Arial, serif; max-width: 600px; margin: 0 auto; }
         #messages { border: 1px solid #ccc; height: 300px; overflow-y: scroll; padding: 10px; }
         #messageInput { width: 70%; padding: 8px; }
+        #serverAddress { width: 70%; padding: 8px; margin-bottom: 10px; }
         button { padding: 8px 15px; }
     </style>
 </head>
 <body>
 <h1>WebSocket Chat</h1>
+<input type="text" id="serverAddress" placeholder="Enter server address (ws://ip:port)">
 <div id="messages"></div>
-<label for="messageInput"></label><input type="text" id="messageInput" placeholder="Input message...">
-<button onclick="sendMessage()">Send</button>
+<input type="text" id="messageInput" placeholder="Input message...">
+<button onclick="connectAndSend()">Connect & Send</button>
 
 <script>
-  const socket = new WebSocket('ws://localhost:8080');
+  let socket;
   const messagesDiv = document.getElementById('messages');
   const messageInput = document.getElementById('messageInput');
+  const serverAddressInput = document.getElementById('serverAddress');
 
-  socket.onmessage = (event) => {
+  function connectAndSend() {
+    const address = serverAddressInput.value.trim() || 'ws://localhost:8080';
+
+    if (!socket || socket.readyState !== WebSocket.OPEN) {
+      socket = new WebSocket(address);
+
+      socket.onopen = () => {
+        addMessage('Connected to server');
+        sendMessage();
+      };
+
+      socket.onmessage = (event) => {
+        addMessage(event.data);
+      };
+
+      socket.onerror = (error) => {
+        addMessage(`Error: ${error.message || 'Unknown error'}`);
+      };
+
+      socket.onclose = () => {
+        addMessage('Disconnected from server');
+      };
+    } else {
+      sendMessage();
+    }
+  }
+
+  function addMessage(text) {
     const message = document.createElement('div');
-    message.textContent = event.data;
+    message.textContent = text;
     messagesDiv.appendChild(message);
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
-  };
+  }
 
   function sendMessage() {
     const message = messageInput.value.trim();
-    if (message && socket.readyState === WebSocket.OPEN) {
+    if (message && socket && socket.readyState === WebSocket.OPEN) {
       socket.send(message);
       messageInput.value = '';
     }
   }
 
   messageInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') sendMessage();
+    if (e.key === 'Enter') connectAndSend();
   });
-
-  socket.onerror = (error) => {
-    console.error('Error:', error);
-  };
 </script>
 </body>
 </html>

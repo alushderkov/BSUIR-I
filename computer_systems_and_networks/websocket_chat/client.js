@@ -6,7 +6,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question("Введите адрес сервера (например, ws://localhost:8080): ",
+rl.question("Введите адрес сервера (например, ws://192.168.1.100:8080): ",
   (url) => {
     const client = new WebSocket(url);
 
