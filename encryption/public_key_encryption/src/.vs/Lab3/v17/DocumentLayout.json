@@ -1,7 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\bsuir\\encryption\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\src\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\bsuir\\encryption\\public_key_encryption\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC53B80-B58C-4901-AE55-1F8502FE221B}|Lab3.csproj|d:\\bsuir\\encryption\\public_key_encryption\\src\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC53B80-B58C-4901-AE55-1F8502FE221B}|Lab3.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC53B80-B58C-4901-AE55-1F8502FE221B}|Lab3.csproj|d:\\bsuir\\encryption\\public_key_encryption\\src\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC53B80-B58C-4901-AE55-1F8502FE221B}|Lab3.csproj|solutionrelative:validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +31,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\bsuir\\encryption\\public_key_encryption\\src\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\bsuir\\encryption\\public_key_encryption\\src\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwC0AAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T18:59:00.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Validator.cs",
+              "DocumentMoniker": "D:\\bsuir\\encryption\\public_key_encryption\\src\\Validator.cs",
+              "RelativeDocumentMoniker": "Validator.cs",
+              "ToolTip": "D:\\bsuir\\encryption\\public_key_encryption\\src\\Validator.cs",
+              "RelativeToolTip": "Validator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T18:58:35.895Z",
+              "EditorCaption": ""
             }
           ]
         }

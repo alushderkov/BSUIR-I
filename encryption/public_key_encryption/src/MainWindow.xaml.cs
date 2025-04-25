@@ -40,7 +40,13 @@ public partial class MainWindow : Window
             MessageBox.Show(error, "ой-йой", MessageBoxButton.OK, MessageBoxImage.Error);
             return;
         }
-        
+
+        if (!Validator.IsProductValid(p, q, out error))
+        {
+            MessageBox.Show(error, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            return;
+        }
+
         if (!Validator.IsCorrectParamB(b, MinB, MaxB, "b", out error))
         {
             MessageBox.Show(error, "ой-йой", MessageBoxButton.OK, MessageBoxImage.Error);

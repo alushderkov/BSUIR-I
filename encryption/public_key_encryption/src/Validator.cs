@@ -6,6 +6,17 @@ namespace Lab3;
 public static class Validator
 {
 
+    public static bool IsProductValid(BigInteger p, BigInteger q, out string error)
+    {
+        error = string.Empty;
+        if (p * q <= 256)
+        {
+            error = "Произведение p и q должно быть больше 256!\r\n";
+            return false;
+        }
+        return true;
+    }
+
     public static bool IsCorrectParam(BigInteger number, int min, string paramName, out string error)
     {
         error = string.Empty;
