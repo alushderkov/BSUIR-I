@@ -7,6 +7,10 @@ function TaskList() {
   const [editingTask, setEditingTask] = useState(null);
   const [editTitle, setEditTitle] = useState('');
   const [editDescription, setEditDescription] = useState('');
+  const [editDate, setEditDate] = useState('');
+  const [editComplexity, setEditComplexity] = useState('MEDIUM');
+  const [editTags, setEditTags] = useState('');
+  const [editDeadline, setEditDeadline] = useState('');
 
   const { loading, error, data } = useQuery(GET_TASKS, {
     fetchPolicy: 'network-only' // Это заставит Apollo всегда делать новый запрос
@@ -27,11 +31,16 @@ function TaskList() {
 
   const handleUpdateTask = async (taskId) => {
     try {
+      const tagsArray = editTags.split(',').map(tag => tag.trim()).filter(tag => tag);
       await updateTask({
         variables: {
           id: taskId,
           title: editTitle,
-          description: editDescription
+          description: editDescription,
+          date: editDate,
+          complexity: editComplexity,
+          tags: tagsArray,
+          deadline: editDeadline || null
         }
       });
       setEditingTask(null);
@@ -63,6 +72,16 @@ function TaskList() {
     }
   };
 
+  const startEditing = (task) => {
+    setEditingTask(task.id);
+    setEditTitle(task.title);
+    setEditDescription(task.description || '');
+    setEditDate(task.date);
+    setEditComplexity(task.complexity);
+    setEditTags(task.tags.join(', '));
+    setEditDeadline(task.deadline || '');
+  };
+
   if (tasks.length === 0) {
     return <div className="empty-message">No tasks yet. Create your first task!</div>;
   }
@@ -89,6 +108,46 @@ function TaskList() {
                 onChange={(e) => setEditDescription(e.target.value)}
                 placeholder="Task description"
               />
+              <div className="form-row">
+                <div className="form-group">
+                  <label>Date:</label>
+                  <input
+                    type="date"
+                    value={editDate}
+                    onChange={(e) => setEditDate(e.target.value)}
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Complexity:</label>
+                  <select
+                    value={editComplexity}
+                    onChange={(e) => setEditComplexity(e.target.value)}
+                  >
+                    <option value="EASY">Easy</option>
+                    <option value="MEDIUM">Medium</option>
+                    <option value="HARD">Hard</option>
+                  </select>
+                </div>
+              </div>
+              <div className="form-row">
+                <div className="form-group">
+                  <label>Tags:</label>
+                  <input
+                    type="text"
+                    value={editTags}
+                    onChange={(e) => setEditTags(e.target.value)}
+                    placeholder="work, important, urgent"
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Deadline:</label>
+                  <input
+                    type="date"
+                    value={editDeadline}
+                    onChange={(e) => setEditDeadline(e.target.value)}
+                  />
+                </div>
+              </div>
               <div className="edit-buttons">
                 <button onClick={() => handleUpdateTask(task.id)}>Save</button>
                 <button onClick={() => setEditingTask(null)}>Cancel</button>
@@ -99,14 +158,24 @@ function TaskList() {
               <div className="task-content">
                 <h3>{task.title}</h3>
                 <p>{task.description}</p>
-                <small>Created: {new Date(task.createdAt).toLocaleString()}</small>
+                <div className="task-meta">
+                  <span className="task-date">Date: {new Date(task.date).toLocaleDateString()}</span>
+                  <span className="task-complexity">Complexity: {task.complexity}</span>
+                  <div className="task-tags">
+                    {task.tags.map((tag, index) => (
+                      <span key={index} className="tag">{tag}</span>
+                    ))}
+                  </div>
+                  {task.deadline && (
+                    <span className="task-deadline">
+                      Deadline: {new Date(task.deadline).toLocaleDateString()}
+                    </span>
+                  )}
+                  <small>Created: {new Date(task.createdAt).toLocaleString()}</small>
+                </div>
               </div>
               <div className="task-actions">
-                <button onClick={() => {
-                  setEditingTask(task.id);
-                  setEditTitle(task.title);
-                  setEditDescription(task.description);
-                }}>Edit</button>
+                <button onClick={() => startEditing(task)}>Edit</button>
                 <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
               </div>
             </>

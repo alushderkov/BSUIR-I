@@ -31,6 +31,25 @@ const resolvers = {
       }
       return task;
     },
+    tasksByComplexity: (_, { complexity }, context) => {
+      const userId = getUserId(context);
+      const data = readData(tasksPath);
+      return data.tasks.filter(task => task.userId === userId && task.complexity === complexity);
+    },
+    tasksByTag: (_, { tag }, context) => {
+      const userId = getUserId(context);
+      const data = readData(tasksPath);
+      return data.tasks.filter(task => task.userId === userId && task.tags.includes(tag));
+    },
+    tasksByDateRange: (_, { startDate, endDate }, context) => {
+      const userId = getUserId(context);
+      const data = readData(tasksPath);
+      return data.tasks.filter(task => 
+        task.userId === userId && 
+        task.date >= startDate && 
+        task.date <= endDate
+      );
+    },
     me: (_, __, context) => {
       const userId = getUserId(context);
       const data = readData(usersPath);
@@ -46,7 +65,7 @@ const resolvers = {
     }
   },
   Mutation: {
-    createTask: async (_, { title, description, userId }, context) => {
+    createTask: async (_, { title, description, userId, date, complexity, tags, deadline }, context) => {
       const contextUserId = getUserId(context);
       if (contextUserId !== userId) {
         throw new Error('Not authorized');
@@ -58,13 +77,17 @@ const resolvers = {
         description,
         completed: false,
         createdAt: new Date().toISOString(),
-        userId
+        userId,
+        date,
+        complexity,
+        tags,
+        deadline
       };
       data.tasks.push(newTask);
       writeData(tasksPath, data);
       return newTask;
     },
-    updateTask: async (_, { id, title, description, completed }, context) => {
+    updateTask: async (_, { id, title, description, completed, date, complexity, tags, deadline }, context) => {
       const userId = getUserId(context);
       const data = readData(tasksPath);
       const taskIndex = data.tasks.findIndex(task => task.id === id && task.userId === userId);
@@ -75,7 +98,11 @@ const resolvers = {
         ...data.tasks[taskIndex],
         ...(title && { title }),
         ...(description && { description }),
-        ...(completed !== undefined && { completed })
+        ...(completed !== undefined && { completed }),
+        ...(date && { date }),
+        ...(complexity && { complexity }),
+        ...(tags && { tags }),
+        ...(deadline && { deadline })
       };
       data.tasks[taskIndex] = updatedTask;
       writeData(tasksPath, data);

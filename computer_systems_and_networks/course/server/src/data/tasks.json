@@ -6,7 +6,13 @@
       "description": "Study GraphQL basics and implementation",
       "completed": false,
       "createdAt": "2024-03-21T10:00:00.000Z",
-      "userId": "1"
+      "userId": "1",
+      "date": "2024-03-21",
+      "complexity": "MEDIUM",
+      "tags": [
+        "learning",
+        "graphql"
+      ]
     },
     {
       "id": "1747854530474",
@@ -14,7 +20,26 @@
       "description": "2",
       "completed": false,
       "createdAt": "2025-05-21T19:08:50.474Z",
-      "userId": "1747851747747"
+      "userId": "1747851747747",
+      "date": "2025-05-21",
+      "complexity": "MEDIUM",
+      "tags": [
+        "untagged"
+      ]
+    },
+    {
+      "id": "1747929541972",
+      "title": "1",
+      "description": "",
+      "completed": false,
+      "createdAt": "2025-05-22T15:59:01.972Z",
+      "userId": "1747851783718",
+      "date": "2025-05-22",
+      "complexity": "MEDIUM",
+      "tags": [
+        "untagged"
+      ],
+      "deadline": null
     }
   ]
 }

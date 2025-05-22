@@ -175,18 +175,14 @@ body {
 
 .task-item {
   background-color: white;
+  border-radius: 8px;
   padding: 1.5rem;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  transition: var(--transition);
-}
-
-.task-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
 }
 
 .task-item input[type="checkbox"] {
@@ -197,35 +193,91 @@ body {
 }
 
 .task-content {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .task-content h3 {
-  margin-bottom: 0.5rem;
+  margin: 0;
   color: var(--text-color);
+  font-size: 1.2rem;
 }
 
 .task-content p {
   color: #666;
-  margin-bottom: 0.5rem;
+  margin: 0;
+  line-height: 1.5;
 }
 
-.task-content small {
-  color: #999;
+.task-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #eee;
+}
+
+.task-date,
+.task-complexity,
+.task-deadline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.task-date::before {
+  content: "📅";
+}
+
+.task-complexity::before {
+  content: "⚡";
+}
+
+.task-deadline::before {
+  content: "⏰";
+}
+
+.task-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
   font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.tag::before {
+  content: "#";
+  opacity: 0.7;
 }
 
 .task-actions {
   display: flex;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
 .task-actions button {
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: 4px;
   cursor: pointer;
-  transition: var(--transition);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .task-actions button:first-child {
@@ -234,59 +286,77 @@ body {
 }
 
 .task-actions button:last-child {
-  background-color: var(--error-color);
+  background-color: #f44336;
   color: white;
 }
 
 .task-actions button:hover {
   opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.task-item.completed {
+  opacity: 0.7;
+}
+
+.task-item.completed .task-content h3 {
+  text-decoration: line-through;
+  color: #95a5a6;
 }
 
 .edit-form {
+  grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 100%;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
 }
 
 .edit-form input,
 .edit-form textarea {
   padding: 0.8rem;
   border: 1px solid #ddd;
-  border-radius: var(--border-radius);
+  border-radius: 4px;
   font-size: 1rem;
+  width: 100%;
+}
+
+.edit-form textarea {
+  min-height: 100px;
+  resize: vertical;
 }
 
 .edit-buttons {
   display: flex;
   gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .edit-buttons button {
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: 4px;
   cursor: pointer;
-  transition: var(--transition);
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .edit-buttons button:first-child {
-  background-color: var(--success-color);
+  background-color: #4caf50;
   color: white;
 }
 
 .edit-buttons button:last-child {
-  background-color: #95a5a6;
+  background-color: #f44336;
   color: white;
 }
 
-.completed {
-  opacity: 0.7;
-}
-
-.completed .task-content h3 {
-  text-decoration: line-through;
-  color: #95a5a6;
+.edit-buttons button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 .empty-message {
@@ -297,4 +367,30 @@ body {
   background-color: white;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
 }
