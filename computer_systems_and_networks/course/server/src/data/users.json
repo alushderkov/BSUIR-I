@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "1747851747747",
+      "username": "sasha",
+      "password": "$2b$10$LZGjbRb/jiaAp9jKNvKJbO5R2hz3RjKzuV4SFN4AC6IVBzSoUCs1G",
+      "createdAt": "2025-05-21T18:22:27.747Z"
+    },
+    {
+      "id": "1747851783718",
+      "username": "lera",
+      "password": "$2b$10$OUeoYVJ7yVCFymn1qVTJxe0/h3VwcS0OdpHaNgIhXhkvUDkkO2S9m",
+      "createdAt": "2025-05-21T18:23:03.718Z"
+    }
+  ]
+}
