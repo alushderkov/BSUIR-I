@@ -11,6 +11,12 @@
       "username": "lera",
       "password": "$2b$10$OUeoYVJ7yVCFymn1qVTJxe0/h3VwcS0OdpHaNgIhXhkvUDkkO2S9m",
       "createdAt": "2025-05-21T18:23:03.718Z"
+    },
+    {
+      "id": "1748277485502",
+      "username": "vlad",
+      "password": "$2b$10$S4qK6uWpV0l8et9q/dgdPueW1lCZMjQQItzDKLB8YrBsWjqaYXona",
+      "createdAt": "2025-05-26T16:38:05.502Z"
     }
   ]
 }
