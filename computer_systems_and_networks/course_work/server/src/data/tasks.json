@@ -26,20 +26,6 @@
       "tags": [
         "untagged"
       ]
-    },
-    {
-      "id": "1748277458610",
-      "title": "z",
-      "description": "",
-      "completed": false,
-      "createdAt": "2025-05-26T16:37:38.610Z",
-      "userId": "1747851747747",
-      "date": "2025-05-26",
-      "complexity": "MEDIUM",
-      "tags": [
-        "untagged"
-      ],
-      "deadline": null
     }
   ]
 }
