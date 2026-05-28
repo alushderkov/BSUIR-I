@@ -10,6 +10,8 @@ This repository is a structured collection of engineering and IT projects coveri
 - **Web Technologies & Software Development** – Frontend and backend projects, API development, and optimization strategies.
 - **Data Analysis & Computational Methods** – Statistical computations, numerical methods, and machine learning fundamentals.
 - **Technical Writing & Documentation** – Well-structured reports and methodology explanations to complement technical implementations.
+-**- [NEW] -**
+- **Math Programming, Computer Graphic, Digital Design, etc.**
 
 ## Why This Repository?🪽
 - Demonstrates proficiency in **problem-solving, software design, and engineering principles**.
