@@ -1,0 +1,7 @@
+Running: xsim.dir/translator_structural_time_impl/xsimk.exe -simmode gui -wdb translator_structural_time_impl.wdb -simrunnum 0 -socket 59931
+Design successfully loaded
+Design Loading Memory Usage: 7716 KB (Peak: 7716 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 8308 KB (Peak: 8308 KB)
+Simulation CPU Usage: 77 ms

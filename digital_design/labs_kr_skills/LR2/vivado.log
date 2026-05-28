@@ -1,0 +1,258 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Mar  2 19:32:27 2026
+# Process ID: 16824
+# Current directory: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15528 C:\Users\renuxela\my-files\bsuir\6sem\POCP\LR2\LR2.xpr
+# Log file: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/vivado.log
+# Journal file: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 860.492 ; gain = 141.414
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'translator_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj translator_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sources_1/new/Gates.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity inv
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-307] analyzing entity or2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sources_1/new/Task1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity translator_structural
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity translator_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto c7386051b23746bab3bc984483d18d30 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot translator_tb_behav xil_defaultlib.translator_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.inv [inv_default]
+Compiling architecture behavioral of entity xil_defaultlib.and2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.or2 [or2_default]
+Compiling architecture structural of entity xil_defaultlib.translator_structural [translator_structural_default]
+Compiling architecture behavioral of entity xil_defaultlib.translator_tb
+Built simulation snapshot translator_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim/xsim.dir/translator_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar  2 19:33:12 2026...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 889.668 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "translator_tb_behav -key {Behavioral:sim_1:Functional:translator_tb} -tclbatch {translator_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source translator_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Error when g =9
+Time: 90 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 190 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 290 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 390 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 490 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 590 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 690 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 790 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 890 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 990 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'translator_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 891.379 ; gain = 1.711
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'translator_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj translator_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity translator_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto c7386051b23746bab3bc984483d18d30 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot translator_tb_behav xil_defaultlib.translator_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.inv [inv_default]
+Compiling architecture behavioral of entity xil_defaultlib.and2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.or2 [or2_default]
+Compiling architecture structural of entity xil_defaultlib.translator_structural [translator_structural_default]
+Compiling architecture behavioral of entity xil_defaultlib.translator_tb
+Built simulation snapshot translator_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "translator_tb_behav -key {Behavioral:sim_1:Functional:translator_tb} -tclbatch {translator_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source translator_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Error when g =9
+Time: 90 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'translator_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/translator_tb}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/translator_tb}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/translator_tb}} 
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'translator_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj translator_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity translator_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto c7386051b23746bab3bc984483d18d30 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot translator_tb_behav xil_defaultlib.translator_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.inv [inv_default]
+Compiling architecture behavioral of entity xil_defaultlib.and2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.or2 [or2_default]
+Compiling architecture structural of entity xil_defaultlib.translator_structural [translator_structural_default]
+Compiling architecture behavioral of entity xil_defaultlib.translator_tb
+Built simulation snapshot translator_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "translator_tb_behav -key {Behavioral:sim_1:Functional:translator_tb} -tclbatch {translator_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source translator_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Error when g =9
+Time: 90 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 190 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 290 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 390 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 490 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 590 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 690 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 790 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 890 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 990 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'translator_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  2 19:48:49 2026...

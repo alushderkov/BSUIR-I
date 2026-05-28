@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR4_a2/LR4_a2.sim/sim_1/synth/func/xsim/tb_bist_ext_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lfsr_ext_gen
+INFO: [VRFC 10-307] analyzing entity sa_ext
+INFO: [VRFC 10-307] analyzing entity bist_ext

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Apr  1 20:09:16 2026
+# Process ID: 16012
+# Current directory: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.sim/sim_5/synth/func/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.sim/sim_5/synth/func/xsim/xsim.dir/tb_universal_counter_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.sim/sim_5/synth/func/xsim/webtalk.log
+# Journal file: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.sim/sim_5/synth/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.sim/sim_5/synth/func/xsim/xsim.dir/tb_universal_counter_func_synth/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,48 @@
+## Variant 24 - Task 7: Code Translator Unit Constraints (Structural)
+## Maps 4 switches (7421 input) and 16 LEDs (lower 4 show Excess-3 output)
+
+## LED Outputs (all 16, but only lower 4 used)
+set_property PACKAGE_PIN P2 [get_ports {led_out[15]}]
+set_property PACKAGE_PIN R2 [get_ports {led_out[14]}]
+set_property PACKAGE_PIN U1 [get_ports {led_out[13]}]
+set_property PACKAGE_PIN P5 [get_ports {led_out[12]}]
+set_property PACKAGE_PIN R1 [get_ports {led_out[11]}]
+set_property PACKAGE_PIN V1 [get_ports {led_out[10]}]
+set_property PACKAGE_PIN U3 [get_ports {led_out[9]}]
+set_property PACKAGE_PIN V4 [get_ports {led_out[8]}]
+set_property PACKAGE_PIN U6 [get_ports {led_out[7]}]
+set_property PACKAGE_PIN U7 [get_ports {led_out[6]}]
+set_property PACKAGE_PIN T4 [get_ports {led_out[5]}]
+set_property PACKAGE_PIN T5 [get_ports {led_out[4]}]
+set_property PACKAGE_PIN T6 [get_ports {led_out[3]}]
+set_property PACKAGE_PIN R8 [get_ports {led_out[2]}]
+set_property PACKAGE_PIN V9 [get_ports {led_out[1]}]
+set_property PACKAGE_PIN T8 [get_ports {led_out[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[15]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[14]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[13]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[12]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[11]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[10]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[9]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[8]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_out[0]}]
+
+## Switch Inputs (only lower 4 switches used)
+set_property PACKAGE_PIN R6 [get_ports {sw_in[3]}]
+set_property PACKAGE_PIN R7 [get_ports {sw_in[2]}]
+set_property PACKAGE_PIN U8 [get_ports {sw_in[1]}]
+set_property PACKAGE_PIN U9 [get_ports {sw_in[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_in[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_in[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_in[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_in[0]}]

@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../LR4.srcs/sources_1/new/lfsr_galois.vhd" \
+"../../../../LR4.srcs/sources_1/new/scheme.vhd" \
+"../../../../LR4.srcs/sources_1/new/signature_analyzer.vhd" \
+"../../../../LR4.srcs/sources_1/new/top_bist.vhd" \
+"../../../../LR4.srcs/sources_1/new/lfsr_fibo.vhd" \
+"../../../../LR4.srcs/sim_1/imports/new/Sim.vhd" \
+"../../../../LR4.srcs/sim_1/new/Sim2.vhd" \
+
+# Do not sort compile order
+nosort

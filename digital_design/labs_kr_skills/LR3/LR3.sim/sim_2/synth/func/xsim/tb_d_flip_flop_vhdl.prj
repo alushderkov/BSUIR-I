@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tb_d_flip_flop_func_synth.vhd" \
+"../../../../../LR3.srcs/sim_2/new/Task2.vhd" \
+
+# Do not sort compile order
+nosort

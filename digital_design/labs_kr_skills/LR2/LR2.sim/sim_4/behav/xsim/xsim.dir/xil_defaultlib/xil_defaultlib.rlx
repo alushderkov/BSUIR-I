@@ -1,0 +1,10 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_4/new/Task4_Test.vhd,1772482976,vhdl,,,,tb_comp,,,,,,,,
+C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sources_1/new/Gates.vhd,1772468241,vhdl,,,,and2;inv;or2,,,,,,,,
+C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sources_1/new/Gates_Delayed.vhd,1772470532,vhdl,C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sources_1/new/comp_cell.vhd,,,and2_d;inv_d;or2_d,,,,,,,,
+C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sources_1/new/comp_3bit.vhd,1772482469,vhdl,C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_4/new/Task4_Test.vhd,,,comp_3bit,,,,,,,,
+C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sources_1/new/comp_cell.vhd,1772481947,vhdl,C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sources_1/new/comp_3bit.vhd,,,comp_cell,,,,,,,,
+C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sources_1/new/translator_structural_d.vhd,1772471141,vhdl,,,,translator_structural,,,,,,,,

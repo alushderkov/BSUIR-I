@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.sim/sim_1/synth/func/xsim/tb_RS_LATCH_NAND_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity xil_defaultlib_LUT2
+INFO: [VRFC 10-307] analyzing entity \xil_defaultlib_LUT2__2\
+INFO: [VRFC 10-307] analyzing entity RS_LATCH_NAND
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.srcs/sim_1/new/Task1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_RS_LATCH_NAND

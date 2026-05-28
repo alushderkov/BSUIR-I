@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.srcs/sources_1/new/Task4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity freq_div_behav
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.srcs/sim_4/new/Task4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_freq_div_behav

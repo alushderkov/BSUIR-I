@@ -1,0 +1,807 @@
+Задание варианта 24, для которого и были реализованы все задачи:
+K = 2B4C
+I = 68
+J = BE
+F = 2B4C
+{A,B,C,D} = { nand, -, <<<, xor }
+G = 7421
+L = С избытком 3
+
+Учти, что в заданиях ошибка, и правильно использовать плату Nexys 4
+
+Задание 1.
+Согласно вашему варианту (1-30) из таблицы 1 выберите число K.
+Представьте число K в формате двоичного кода, сколько бит необходимо для записи числа K в двоичном представлении? (назовём это значение - N).
+При помощи САПР Vivado и языка описания аппаратуры VHDL опишите блок led_const, имеющий N разрядный выходной порт led_o, которому присвоено значение числа K в двоичном представлении.
+При помощи САПР Vivado подготовьте описание физических ограничений размещения и трассировки описанного ранее блока led_const на кристалле ПЛИС серии Artix-7 в составе платы быстрого прототипирования Digilent Basys 3.
+При помощи САПР Vivado произведите операцию синтеза, имплементации и генерации битстрима разработанного модуля. Проанализируйте полученную в результате синтеза схему при помощи schematic инструмента.
+При помощи Vivado Hardware Manager установите соединение с отладочной платой и загрузите в неё полученную (шаг 1.5) прошивку ПЛИС. Объясните полученные вами эмпирические результаты работы платы. 
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+
+entity led_const is
+    Generic (
+        value: std_logic_vector := X"2B4C"
+    );
+    Port ( 
+        led_o: out std_logic_vector(value'length - 1 downto 0)
+    );
+end led_const;
+
+architecture Behavioral of led_const is
+ constant output_value: std_logic_vector(value'length - 1 downto 0) := value;
+begin
+    led_o <= output_value;
+end Behavioral;
+
+
+Задание 2.
+При помощи САПР Vivado и языка описания аппаратуры VHDL опишите блок sw_led_unit, имеющий N разрядный выходной порт led_o и N разрядный входной порт sw_i. При этом необходимо обеспечить коммутацию значений из порта sw_i в порт led_o. 
+При помощи САПР Vivado подготовьте описание физических ограничений размещения и трассировки описанного ранее блока led_const на кристалле ПЛИС серии Artix-7 в составе платы быстрого прототипирования Digilent Basys 3.
+При помощи САПР Vivado произведите операцию синтеза, имплементации и генерации битстрима разработанного модуля. Проанализируйте полученную в результате синтеза схему при помощи schematic инструмента.
+При помощи Vivado Hardware Manager установите соединение с отладочной платой и загрузите в неё полученную (шаг 1.3) прошивку ПЛИС. Объясните полученные вами эмпирические результаты работы платы. 
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity sw_led_unit is
+    Generic (
+        N: integer := 16
+    );
+    Port ( 
+        sw_i: in std_logic_vector(N - 1 downto 0);
+        led_o: out std_logic_vector(N - 1 downto 0) 
+    );
+end sw_led_unit;
+
+architecture Behavioral of sw_led_unit is
+begin
+    led_o <= sw_i;
+end Behavioral;
+
+Задание 3.
+Согласно вашему варианту (1-30) из таблицы 1 выберите числа I, J и представьте их в двоичной форме.
+На основе разработанного ранее блока sw_led_unit опишите блок comb_led_unit, который выполняет над входным портом sw_i[7:0] и числом I такую булеву операцию, которая способна породить двоичный вектор равный числу J. Выведите число J на led-индикаторы (led_o[15:0]) задействуя при этом все светодиоды. Значение sw_i[7:0] выберите произвольно.
+При помощи САПР Vivado произведите операцию синтеза, имплементации и генерации битстрима разработанного модуля. Проанализируйте полученную в результате синтеза схему при помощи schematic инструмента.
+При помощи Vivado Hardware Manager установите соединение с отладочной платой и загрузите в неё полученную (шаг 1.3) прошивку ПЛИС. Объясните полученные вами эмпирические результаты работы платы. Нарисуйте структурную схему разработанного аппаратного обеспечения. Объясните выбор преобразующей булевой функции.
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- I = 68 = 0000_0000_0110_1000
+-- J = BE = 0000_0000_1011_1110
+-- sw_i[7_0] = 1101_0110 = D6
+
+entity comb_led_unit is
+  Generic (
+    M: integer := 16;
+    I: std_logic_vector(7 downto 0) := X"68"
+  );
+  Port ( 
+    sw_i: in std_logic_vector(7 downto 0);
+    led_o: out std_logic_vector(M - 1 downto 0)
+  );
+end comb_led_unit;
+
+architecture Behavioral of comb_led_unit is
+    
+    signal result_8bit: std_logic_vector(I'length - 1 downto 0);
+
+begin
+    
+    result_8bit <= I xor sw_i;
+    led_o <= (M - 1 downto I'length => '0') & result_8bit;
+
+end Behavioral;
+
+Задание 4.
+Согласно вашему варианту (1-30) из таблицы 1 выберите логическую функцию четырех переменных F и разработайте на языке описания аппаратуры VHDL – комбинационный узел для её реализации с минимальным количеством вентилей. При разработке используйте метод структурного описания схемы.
+При помощи САПР Vivado произведите операцию синтеза, имплементации и генерации битстрима разработанного модуля. Проанализируйте полученную в результате синтеза схему при помощи schematic инструмента.
+При помощи Vivado Hardware Manager установите соединение с отладочной платой и загрузите в неё полученную (шаг 1.3) прошивку ПЛИС. Объясните полученные вами эмпирические результаты работы платы. Нарисуйте структурную схему разработанного аппаратного обеспечения. 
+
+
+-- | `x[3:0]` (decimal) | `x[3] x[2] x[1] x[0]` | F (binary, from 2B4C) |
+-- | :-------------------- | :-------------------------------- | :-------------------- |
+-- | 0                     | 0000                              | 0                     |
+-- | 1                     | 0001                              | 0                     |
+-- | 2                     | 0010                              | 1                     | !!!
+-- | 3                     | 0011                              | 0_                    |
+-- | 4                     | 0100                              | 1                     | !!!
+-- | 5                     | 0101                              | 0                     |
+-- | 6                     | 0110                              | 1                     | !!!
+-- | 7                     | 0111                              | 1_                    | !!!
+-- | 8                     | 1000                              | 0                     |
+-- | 9                     | 1001                              | 1                     | !!!
+-- | 10                    | 1010                              | 0                     |
+-- | 11                    | 1011                              | 0_                    |
+-- | 12                    | 1100                              | 1                     | !!!
+-- | 13                    | 1101                              | 1                     | !!!
+-- | 14                    | 1110                              | 0                     |
+-- | 15                    | 1111                              | 0                     |
+
+-- 2B4C = 0010_1011_0100_1100
+
+-- F(x3,x2,x1,x0) = !x3!x2x1!x0 + !x3x2!x1!x0 + !x3x2x1!x0 + !x3x2x1x0 + x3!x2!x1x0 + x3x2!x1!x0 + x3x2!x1x0 =
+-- = !(!x3!x2)!x1!x0 + x3x2!x1 + !x3!x0!(!x2!x1) + !x3x2x1
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity F is
+    Generic (
+        N: integer := 4
+    );
+    Port (
+        x: in std_logic_vector(N - 1 downto 0);
+        F: out std_logic    
+    );
+end;
+
+architecture Structural of F is
+    signal x_not3: std_logic := not x(3);
+    signal x_not2: std_logic := not x(2);
+    signal x_not1: std_logic := not x(1);
+    signal x_not0: std_logic := not x(0);
+    signal x23_not23: std_logic := not (x_not3 and x_not2);
+    signal x21_not21: std_logic := not (x_not2 and x_not1);
+    
+    signal and1, and2, and3, and4: std_logic;
+
+begin
+    
+    term1: entity work.AND_N port map (
+        inputs(0) => x23_not23,
+        inputs(1) => x_not2,
+        inputs(2) => x_not1,
+        output => and1
+    );
+    
+    term2: entity work.AND_N port map (
+        inputs(0) => x(3),
+        inputs(1) => x(2),
+        inputs(2) => x_not1,
+        output => and2
+    );
+    
+    term3: entity work.AND_N port map (
+        inputs(0) => x_not3,
+        inputs(1) => x_not0,
+        inputs(2) => x21_not21,
+        output => and3
+    );
+    
+    term4: entity work.AND_N port map (
+        inputs(0) => x_not3,
+        inputs(1) => x(2),
+        inputs(2) => x(1),
+        output => and4
+    );
+    
+    mdnf: entity work.OR_N port map (
+        inputs(0) => and1,
+        inputs(1) => and2,
+        inputs(2) => and2,
+        inputs(3) => and4,
+        output => F
+    );
+
+end;
+
+Задание 5.
+Согласно вашему варианту (1-30) из таблицы 1 выберите операции (A, B, C, D) для реализации на языке описания аппаратуры VHDL. 
+На основе разработанного ранее блока sw_led_unit опишите блок alu_unit, который:
+При sw_i[0] = ‘1’ реализует преобразование led_o[5:0]= sw[15:10] A sw[9:4]
+При sw_i[1] = ‘1’ реализует преобразование led_o[5:0]= sw[15:10] B sw[9:4]
+При sw_i[2] = ‘1’ реализует преобразование led_o[5:0]= sw[15:10] C sw[9:4]
+При sw_i[3] = ‘1’ реализует преобразование led_o[5:0]= sw[15:10] D sw[9:4]
+При помощи САПР Vivado произведите операцию синтеза, имплементации и генерации битстрима разработанного модуля. Проанализируйте полученную в результате синтеза схему при помощи schematic инструмента.
+При помощи Vivado Hardware Manager установите соединение с отладочной платой и загрузите в неё полученную (шаг 1.3) прошивку ПЛИС. Объясните полученные вами эмпирические результаты работы платы. Нарисуйте структурную схему разработанного аппаратного обеспечения.
+
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity alu is
+    Generic (
+        SW_I_SIZE: integer := 16;
+        LED_O_SIZE: integer := 6;
+        SHIFT: integer := 3
+    );
+    Port (
+        sw_i: in std_logic_vector(SW_I_SIZE - 1 downto 0);
+        led_o: out std_logic_vector(LED_O_SIZE - 1 downto 0)
+     );
+end;
+
+architecture Behavioral of alu is
+    constant operand4: integer := SW_I_SIZE - 1;
+    constant operand3: integer := SW_I_SIZE - LED_O_SIZE;
+    constant operand2: integer := SW_I_SIZE - LED_O_SIZE - 1;
+    constant operand1: integer := 4;
+    constant operand0: integer := 3;
+                
+begin
+    with sw_i(operand0 downto 0) select
+    
+        led_o <=
+         
+            sw_i(operand4 downto operand3) 
+            nand 
+            sw_i(operand2 downto operand1)
+            when "0001",
+             
+            std_logic_vector(
+                unsigned(sw_i(operand4 downto operand3)) 
+                - 
+                unsigned(sw_i(operand2 downto operand1))
+            ) when "0010",
+             
+            std_logic_vector(
+                shift_left(
+                    unsigned(sw_i(operand4 downto operand3)), 
+                    to_integer(unsigned(sw_i(operand2 downto operand1)))
+                )
+            ) when "0100",
+             
+            sw_i(operand4 downto operand3) 
+            xor 
+            sw_i(operand2 downto operand1) 
+            when "1000",
+            
+        "000000" when others;                        
+
+end;
+
+Задание 6.
+Согласно вашему варианту (1-30) и используя таблицу 1 постройте преобразователь кодов, из кода G в код L. Опишите преобразователь кодов на языке VHDL используя функциональный метод описания схем.
+При помощи САПР Vivado произведите операцию синтеза, имплементации и генерации битстрима разработанного модуля. Проанализируйте полученную в результате синтеза схему при помощи schematic инструмента.
+При помощи Vivado Hardware Manager установите соединение с отладочной платой и загрузите в неё полученную (шаг 1.3) прошивку ПЛИС. Объясните полученные вами эмпирические результаты работы платы. Нарисуйте структурную схему разработанного аппаратного обеспечения. Покажите на этой схеме критический путь.
+
+-- 7421 Code (G):           Excess-3 Code (L):
+-- 0: 0000                  0: 0011
+-- 1: 0001                  1: 0100
+-- 2: 0010                  2: 0101
+-- 3: 0011                  3: 0110
+-- 4: 0100                  4: 0111
+-- 5: 0101                  5: 1000
+-- 6: 0110                  6: 1001
+-- 7: 1000                  7: 1010
+-- 8: 1001                  8: 1011
+-- 9: 1010                  9: 1100
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity translator6 is
+    Generic (
+        N: integer := 4
+    );
+    Port ( 
+        sw_i: in std_logic_vector(N - 1 downto 0);
+        led_o: out std_logic_vector(N - 1 downto 0)
+    );
+end;
+
+architecture Behavioral of translator6 is
+    
+begin
+    with sw_i(N - 1 downto 0) select
+        led_o <= "0011" when "0000",  -- 7421: 0 -> Exc3: 0
+                 "0100" when "0001",  -- 7421: 1 -> Exc3: 1
+                 "0101" when "0010",  -- 7421: 2 -> Exc3: 2
+                 "0110" when "0011",  -- 7421: 3 -> Exc3: 3
+                 "0111" when "0100",  -- 7421: 4 -> Exc3: 4
+                 "1000" when "0101",  -- 7421: 5 -> Exc3: 5
+                 "1001" when "0110",  -- 7421: 6 -> Exc3: 6
+                 "1010" when "1000",  -- 7421: 7 -> Exc3: 7
+                 "1011" when "1001",  -- 7421: 8 -> Exc3: 8
+                 "1100" when "1010",  -- 7421: 9 -> Exc3: 9
+                 "0000" when others;  -- Invalid codes
+end;
+
+
+Задание 7.
+Согласно вашему варианту (1-30) и используя таблицу 1 постройте преобразователь кодов, из кода G в код L. При минимизации учтите избыточные наборы, оптимизируйте схему по количеству вентилей. Опишите преобразователь кодов на языке VHDL используя структурный метод описания схем, разрешено использовать только вентили mux2 и инверторы.
+При помощи САПР Vivado произведите операцию синтеза, имплементации и генерации битстрима разработанного модуля. Проанализируйте полученную в результате синтеза схему при помощи schematic инструмента.
+При помощи Vivado Hardware Manager установите соединение с отладочной платой и загрузите в неё полученную прошивку ПЛИС. Объясните полученные вами эмпирические результаты работы платы. Нарисуйте структурную схему разработанного аппаратного обеспечения. Покажите на этой схеме критический путь.
+
+
+-- 7421 Code (G):           Excess-3 Code (L):
+-- 0: 0000                  0: 0011
+-- 1: 0001                  1: 0100
+-- 2: 0010                  2: 0101
+-- 3: 0011                  3: 0110
+-- 4: 0100                  4: 0111
+-- 5: 0101                  5: 1000
+-- 6: 0110                  6: 1001
+-- 7: 1000                  7: 1010
+-- 8: 1001                  8: 1011
+-- 9: 1010                  9: 1100
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity translator7 is
+    Generic(
+        N: integer := 4
+    );
+    Port ( 
+        sw_i: in std_logic_vector(N - 1 downto 0);
+        led_o: out std_logic_vector(N - 1 downto 0)
+    );
+end;
+
+architecture Behavioral of translator7 is
+
+    signal not_sw_i: std_logic_vector(N - 1 downto 0);
+    
+        -- ??? L3
+        signal l3_term_g2g1, l3_term_g2g0 : std_logic;
+        signal l3_sum1 : std_logic;
+    
+        -- ??? L2
+        signal l2_term1, l2_term2, l2_term3, l2_term4 : std_logic;
+        signal l2_sum1, l2_sum2, l2_sum3 : std_logic;
+    
+        -- ??? L1
+        signal l1_term1, l1_term2, l1_term3 : std_logic;
+        signal l1_term3_part : std_logic;
+        signal l1_sum1, l1_sum2 : std_logic;
+    
+        -- ??? L0
+        signal l0_term1, l0_term2 : std_logic;
+        
+        -- temp
+        signal l2_term4_tmp : std_logic;
+
+begin
+    
+    NOT_N: for i in 3 downto 0 generate
+        NOT_i: entity work.INV Port map(a => sw_i(i), n_a => not_sw_i(i));
+    end generate;
+    
+    ------------------------------------------------------------------------
+    -- L3 = G3 + (G2*G1) + (G2*G0)
+    ------------------------------------------------------------------------
+    
+    AND_L3_1: entity work.MUX2 
+              Port map (
+                  a => '0', b => sw_i(1), s => sw_i(2), q => l3_term_g2g1
+              );
+
+    AND_L3_2: entity work.MUX2 
+              Port map (
+                a => '0', b => sw_i(0), s => sw_i(2), q => l3_term_g2g0
+              );
+
+    OR_L3_1: entity work.MUX2 
+             Port map (
+                a => l3_term_g2g1, b => '1', s => sw_i(3), q => l3_sum1
+             );
+
+    OR_L3_2: entity work.MUX2 
+             Port map (
+                a => l3_term_g2g0, b => '1', s => l3_sum1, q => led_o(3)
+             );
+
+
+    ------------------------------------------------------------------------
+    -- L2 = (G3*G1) + (!G2*G1) + (!G2*G0) + (G2*!G1*!G0)
+    ------------------------------------------------------------------------
+    
+    AND_L2_1: entity work.MUX2 
+              Port map (
+                a => '0', b => sw_i(1), s => sw_i(3), q => l2_term1
+              );
+
+    AND_L2_2: entity work.MUX2 
+              Port map (
+                a => '0', b => sw_i(1), s => not_sw_i(2), q => l2_term2
+              );
+
+    AND_L2_3: entity work.MUX2 
+              Port map (
+                a => '0', b => sw_i(0), s => not_sw_i(2), q => l2_term3
+              );
+
+    AND_L2_4a: entity work.MUX2 
+               Port map (
+                 a => '0', b => not_sw_i(1), s => sw_i(2), q => l2_term4_tmp
+               );
+               
+    AND_L2_4b: entity work.MUX2 
+               Port map (
+                 a => '0', b => not_sw_i(0), s => l2_term4_tmp, q => l2_term4
+                );
+
+    OR_L2_1: entity work.MUX2 
+             Port map (
+                a => l2_term2, b => '1', s => l2_term1, q => l2_sum1
+             );
+             
+    OR_L2_2: entity work.MUX2 
+             Port map (
+               a => l2_term3, b => '1', s => l2_sum1, q => l2_sum2
+             );
+             
+    OR_L2_3: entity work.MUX2 
+             Port map (
+               a => l2_term4, b => '1', s => l2_sum2, q => led_o(2)
+             );
+
+    ------------------------------------------------------------------------
+    -- L1 = (G3*!G1) + (!G1*!G0) + (!G3*G1*G0)
+    ------------------------------------------------------------------------
+    
+    AND_L1_1: entity work.MUX2 
+              Port map (
+                a => '0', b => not_sw_i(1), s => sw_i(3), q => l1_term1
+              );
+
+    AND_L1_2: entity work.MUX2 
+              Port map (
+                a => '0', b => not_sw_i(0), s => not_sw_i(1), q => l1_term2
+              );
+
+    AND_L1_3a: entity work.MUX2 
+               Port map (
+                 a => '0', b => sw_i(1), s => not_sw_i(3), q => l1_term3_part
+               );
+               
+    AND_L1_3b: entity work.MUX2 
+               Port map (
+                 a => '0', b => sw_i(0), s => l1_term3_part, q => l1_term3
+               );
+
+    OR_L1_1: entity work.MUX2 
+             Port map (
+               a => l1_term2, b => '1', s => l1_term1, q => l1_sum1
+             );
+             
+    OR_L1_2: entity work.MUX2 
+             Port map (
+               a => l1_term3, b => '1', s => l1_sum1, q => led_o(1)
+             );
+
+    ------------------------------------------------------------------------
+    -- L0 = (!G3*!G0) + (G3*G0)
+    ------------------------------------------------------------------------
+    
+    AND_L0_1: entity work.MUX2 
+              Port map (
+                a => '0', b => not_sw_i(0), s => not_sw_i(3), q => l0_term1
+              );
+
+    AND_L0_2: entity work.MUX2 
+              Port map (
+                a => '0', b => sw_i(0), s => sw_i(0), q => l0_term2
+              );
+
+    OR_L0_Final: entity work.MUX2 
+                 Port map (
+                   a => l0_term2, b => '1', s => l0_term1, q => led_o(0)
+                 );
+
+end;
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_MISC.ALL;
+
+entity AND_N is
+    Port (
+        inputs: in std_logic_vector;
+        output: out std_logic
+    );
+end;
+
+architecture Behavioral of AND_N is
+begin
+    output <= and_reduce(inputs);
+end;
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity INV is
+  Port ( 
+    a: in std_logic;
+    n_a: out std_logic
+  );
+end INV;
+
+architecture Behavioral of INV is
+    
+begin
+    n_a <= not a;
+end Behavioral;
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity MUX2 is
+    Port ( 
+        a, b, s: in std_logic;
+        q: out std_logic
+    );
+end;
+
+architecture Behavioral of MUX2 is
+
+begin
+    q <= a when s = '0' else b;
+end;
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_MISC.ALL;
+
+entity OR_N is
+    Port (
+        inputs: in std_logic_vector;
+        output: out std_logic
+    );
+end;
+
+architecture Behavioral of OR_N is
+begin
+    output <= and_reduce(inputs);
+end;
+
+Task1.xdc:
+
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[15]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[14]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[13]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[12]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[11]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[10]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[9]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[8]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[7]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[6]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[5]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[4]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[3]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[2]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[1]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[0]}]
+set_property PACKAGE_PIN P2 [get_ports {led_o[15]}]
+set_property PACKAGE_PIN R2 [get_ports {led_o[14]}]
+set_property PACKAGE_PIN U1 [get_ports {led_o[13]}]
+set_property PACKAGE_PIN P5 [get_ports {led_o[12]}]
+set_property PACKAGE_PIN R1 [get_ports {led_o[11]}]
+set_property PACKAGE_PIN V1 [get_ports {led_o[10]}]
+set_property PACKAGE_PIN U3 [get_ports {led_o[9]}]
+set_property PACKAGE_PIN V4 [get_ports {led_o[8]}]
+set_property PACKAGE_PIN U6 [get_ports {led_o[7]}]
+set_property PACKAGE_PIN U7 [get_ports {led_o[6]}]
+set_property PACKAGE_PIN T4 [get_ports {led_o[5]}]
+set_property PACKAGE_PIN T5 [get_ports {led_o[4]}]
+set_property PACKAGE_PIN T6 [get_ports {led_o[3]}]
+set_property PACKAGE_PIN R8 [get_ports {led_o[2]}]
+set_property PACKAGE_PIN T8 [get_ports {led_o[0]}]
+set_property PACKAGE_PIN V9 [get_ports {led_o[1]}]
+
+Task2.xdc:
+
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[15]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[14]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[13]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[12]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[11]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[10]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[9]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[8]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[7]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[6]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[5]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[4]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[3]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[2]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[1]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {led_o[0]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[15]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[14]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[13]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[12]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[11]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[10]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[9]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[8]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[7]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[6]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[5]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[4]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[3]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[2]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[1]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sw_i[0]}]
+set_property PACKAGE_PIN P2 [get_ports {led_o[15]}]
+set_property PACKAGE_PIN R2 [get_ports {led_o[14]}]
+set_property PACKAGE_PIN U1 [get_ports {led_o[13]}]
+set_property PACKAGE_PIN P5 [get_ports {led_o[12]}]
+set_property PACKAGE_PIN R1 [get_ports {led_o[11]}]
+set_property PACKAGE_PIN V1 [get_ports {led_o[10]}]
+set_property PACKAGE_PIN U3 [get_ports {led_o[9]}]
+set_property PACKAGE_PIN V4 [get_ports {led_o[8]}]
+set_property PACKAGE_PIN U6 [get_ports {led_o[7]}]
+set_property PACKAGE_PIN U7 [get_ports {led_o[6]}]
+set_property PACKAGE_PIN T4 [get_ports {led_o[5]}]
+set_property PACKAGE_PIN T5 [get_ports {led_o[4]}]
+set_property PACKAGE_PIN T6 [get_ports {led_o[3]}]
+set_property PACKAGE_PIN R8 [get_ports {led_o[2]}]
+set_property PACKAGE_PIN V9 [get_ports {led_o[1]}]
+set_property PACKAGE_PIN T8 [get_ports {led_o[0]}]
+set_property PACKAGE_PIN P4 [get_ports {sw_i[15]}]
+set_property PACKAGE_PIN P3 [get_ports {sw_i[14]}]
+set_property PACKAGE_PIN R3 [get_ports {sw_i[13]}]
+set_property PACKAGE_PIN T1 [get_ports {sw_i[12]}]
+set_property PACKAGE_PIN T3 [get_ports {sw_i[11]}]
+set_property PACKAGE_PIN U2 [get_ports {sw_i[10]}]
+set_property PACKAGE_PIN V2 [get_ports {sw_i[9]}]
+set_property PACKAGE_PIN U4 [get_ports {sw_i[8]}]
+set_property PACKAGE_PIN V5 [get_ports {sw_i[7]}]
+set_property PACKAGE_PIN V6 [get_ports {sw_i[6]}]
+set_property PACKAGE_PIN V7 [get_ports {sw_i[5]}]
+set_property PACKAGE_PIN R5 [get_ports {sw_i[4]}]
+set_property PACKAGE_PIN R6 [get_ports {sw_i[3]}]
+set_property PACKAGE_PIN R7 [get_ports {sw_i[2]}]
+set_property PACKAGE_PIN U8 [get_ports {sw_i[1]}]
+set_property PACKAGE_PIN U9 [get_ports {sw_i[0]}]
+
+Task3.xdc:
+
+set_property PACKAGE_PIN P2 [get_ports {led_o[15]}]
+set_property PACKAGE_PIN R2 [get_ports {led_o[14]}]
+set_property PACKAGE_PIN U1 [get_ports {led_o[13]}]
+set_property PACKAGE_PIN P5 [get_ports {led_o[12]}]
+set_property PACKAGE_PIN R1 [get_ports {led_o[11]}]
+set_property PACKAGE_PIN V1 [get_ports {led_o[10]}]
+set_property PACKAGE_PIN U3 [get_ports {led_o[9]}]
+set_property PACKAGE_PIN V4 [get_ports {led_o[8]}]
+set_property PACKAGE_PIN U6 [get_ports {led_o[7]}]
+set_property PACKAGE_PIN U7 [get_ports {led_o[6]}]
+set_property PACKAGE_PIN T4 [get_ports {led_o[5]}]
+set_property PACKAGE_PIN T5 [get_ports {led_o[4]}]
+set_property PACKAGE_PIN T6 [get_ports {led_o[3]}]
+set_property PACKAGE_PIN R8 [get_ports {led_o[2]}]
+set_property PACKAGE_PIN V9 [get_ports {led_o[1]}]
+set_property PACKAGE_PIN T8 [get_ports {led_o[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[15]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[14]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[13]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[12]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[11]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[10]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[9]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[8]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[0]}]
+
+set_property PACKAGE_PIN V5 [get_ports {sw_i[7]}]
+set_property PACKAGE_PIN V6 [get_ports {sw_i[6]}]
+set_property PACKAGE_PIN V7 [get_ports {sw_i[5]}]
+set_property PACKAGE_PIN R5 [get_ports {sw_i[4]}]
+set_property PACKAGE_PIN R6 [get_ports {sw_i[3]}]
+set_property PACKAGE_PIN R7 [get_ports {sw_i[2]}]
+set_property PACKAGE_PIN U8 [get_ports {sw_i[1]}]
+set_property PACKAGE_PIN U9 [get_ports {sw_i[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[0]}]
+
+Task4.xdc:
+
+set_property PACKAGE_PIN T8 [get_ports {F}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {F}]
+
+set_property PACKAGE_PIN R6 [get_ports {x[3]}]
+set_property PACKAGE_PIN R7 [get_ports {x[2]}]
+set_property PACKAGE_PIN U8 [get_ports {x[1]}]
+set_property PACKAGE_PIN U9 [get_ports {x[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {x[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {x[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {x[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {x[0]}]
+
+Task5.xdc:
+
+set_property PACKAGE_PIN T4 [get_ports {led_o[5]}]
+set_property PACKAGE_PIN T5 [get_ports {led_o[4]}]
+set_property PACKAGE_PIN T6 [get_ports {led_o[3]}]
+set_property PACKAGE_PIN R8 [get_ports {led_o[2]}]
+set_property PACKAGE_PIN V9 [get_ports {led_o[1]}]
+set_property PACKAGE_PIN T8 [get_ports {led_o[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[0]}]
+
+set_property PACKAGE_PIN P4 [get_ports {sw_i[15]}]
+set_property PACKAGE_PIN P3 [get_ports {sw_i[14]}]
+set_property PACKAGE_PIN R3 [get_ports {sw_i[13]}]
+set_property PACKAGE_PIN T1 [get_ports {sw_i[12]}]
+set_property PACKAGE_PIN T3 [get_ports {sw_i[11]}]
+set_property PACKAGE_PIN U2 [get_ports {sw_i[10]}]
+set_property PACKAGE_PIN V2 [get_ports {sw_i[9]}]
+set_property PACKAGE_PIN U4 [get_ports {sw_i[8]}]
+set_property PACKAGE_PIN V5 [get_ports {sw_i[7]}]
+set_property PACKAGE_PIN V6 [get_ports {sw_i[6]}]
+set_property PACKAGE_PIN V7 [get_ports {sw_i[5]}]
+set_property PACKAGE_PIN R5 [get_ports {sw_i[4]}]
+set_property PACKAGE_PIN R6 [get_ports {sw_i[3]}]
+set_property PACKAGE_PIN R7 [get_ports {sw_i[2]}]
+set_property PACKAGE_PIN U8 [get_ports {sw_i[1]}]
+set_property PACKAGE_PIN U9 [get_ports {sw_i[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[15]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[14]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[13]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[12]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[11]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[10]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[9]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[8]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_i[0]}]
+
+Task6.xdc и Task7.xdc:
+set_property PACKAGE_PIN T6 [get_ports {led_o[3]}]
+set_property PACKAGE_PIN R8 [get_ports {led_o[2]}]
+set_property PACKAGE_PIN V9 [get_ports {led_o[1]}]
+set_property PACKAGE_PIN T8 [get_ports {led_o[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_o[0]}]
+
+set_property PACKAGE_PIN R6 [get_ports {sw_in[3]}]
+set_property PACKAGE_PIN R7 [get_ports {sw_in[2]}]
+set_property PACKAGE_PIN U8 [get_ports {sw_in[1]}]
+set_property PACKAGE_PIN U9 [get_ports {sw_in[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_in[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_in[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_in[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sw_in[0]}]
+
+
+
+
+

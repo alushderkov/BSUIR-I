@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Apr 21 15:21:38 2026
+# Process ID: 18228
+# Current directory: C:/Users/renuxela/my-files/bsuir/6sem/POCP/project_kr/project_kr.runs/synth_1
+# Command line: vivado.exe -log TOP_5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_5.tcl
+# Log file: C:/Users/renuxela/my-files/bsuir/6sem/POCP/project_kr/project_kr.runs/synth_1/TOP_5.vds
+# Journal file: C:/Users/renuxela/my-files/bsuir/6sem/POCP/project_kr/project_kr.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_5.tcl -notrace

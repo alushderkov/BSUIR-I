@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tb_pwm_controller_func_synth.vhd" \
+"../../../../../LR3.srcs/sim_6/new/Task6.vhd" \
+
+# Do not sort compile order
+nosort

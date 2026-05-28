@@ -1,0 +1,23 @@
+---##--ЗАДАНИЕ№1:ДЕШИФРАТОР 3х8 С РАЗРЕШЕНИЕМ(EN)--1.1.По веденческое описание(Behavioral)
+library IEEE;use IEEE.STD_LOGIC_1164.ALL;use IEEE.STD_LOGIC_UNSIGNED.ALL;entity decoder_3x8_en is Port(A:in STD_LOGIC_VECTOR(2 downto 0);EN:in STD_LOGIC;D:out STD_LOGIC_VECTOR(7 downto 0));end decoder_3x8_en;architecture Behavioral of decoder_3x8_en is begin MAIN:process(A,EN) variable fout:std_logic_vector(7 downto 0); variable index:integer range 0 to 7; begin index:=conv_integer(A);--Преобразование адреса в целое число[cite:309] fout:=(others=>'0'); fout(index):=EN;--Активация выхода только при EN=1[cite:323] D<=fout; end process; end Behavioral;
+--1.2.Структурное описание(Structural)
+--Использует вспомогательные компоненты XNOT4(инвертор с маской)и XAND4[cite:569,574]
+architecture Structural of decoder_3x8_en is component XNOT4 is Generic(MASK:integer range 0 to 15); Port(A:in STD_LOGIC_VECTOR(3 downto 0);F:out STD_LOGIC_VECTOR(3 downto 0)); end component; component XAND4 is Port(A:in STD_LOGIC_VECTOR(3 downto 0);F:out STD_LOGIC); end component; subtype slv4 is std_logic_vector(3 downto 0); type slv4x8 is array(0 to 7)of slv4; signal connect4x8:slv4x8; signal inputs:std_logic_vector(3 downto 0); begin inputs<=EN&A;--Объединение сигнала разрешения и адреса[cite:681] DEC3x8:for i in 0 to 7 generate --Маска8+i настраивает инверторы для выбора конкретной комбинации[cite:691] NOT41:XNOT4 generic map(8+i)port map(inputs,connect4x8(i)); AND41:XAND4 port map(connect4x8(i),D(i)); end generate; end Structural;
+--1.3.Generic-поведенческое описание(Generic Behavioral)
+entity decoder_MxN_en is Generic(M:integer:=3);--Параметр разрядности[cite:142] Port(A:in STD_LOGIC_VECTOR(M-1 downto 0);EN:in STD_LOGIC;D:out STD_LOGIC_VECTOR(2**M-1 downto 0)); end decoder_MxN_en; architecture Gen_Behavioral of decoder_MxN_en is begin MAIN:process(A,EN) variable fout:std_logic_vector(2**M-1 downto 0); variable index:integer range 0 to 2**M-1; begin index:=conv_integer(A); for i in 0 to 2**M-1 loop if(i=index)then fout(i):=EN;--[cite:146] else fout(i):='0'; end if; end loop; D<=fout; end process; end Gen_Behavioral;
+---##--ЗАДАНИЕ№2:СИНТЕЗ ЛОГИЧЕСКОЙ СХЕМЫ
+--Логическое выражение по таблице:C<=not(A and(not B))[cite:178]
+entity LogicFunc is Port(A,B:in STD_LOGIC;C:out STD_LOGIC); end LogicFunc;
+--Синтезируемая модель(идентичная RTL-схеме)[cite:150]
+architecture RTL_Identical of LogicFunc is signal not_B:std_logic; signal and_res:std_logic; begin not_B<=not B; and_res<=A and not_B; C<=not and_res; end RTL_Identical;
+--Функционально эквивалентная(поведенческая)модель[cite:151]
+architecture Behavioral of LogicFunc is begin C<=not(A and(not B));--[cite:178] end Behavioral;
+---##--ЗАДАНИЕ№3:АНАЛИЗ ФРАГМЕНТА(D-ЗАЩЕЛКА)
+--Фрагмент:if b='0'then c<='0';if a='1'then c<=not d;end if;end if;[cite:180,183]
+--Результат:D-защелка с разрешением G=not b и данными D=a and(not d)[cite:203,204]
+entity LatchTask is Port(a,b,d:in STD_LOGIC;c:inout STD_LOGIC); end LatchTask; architecture RTL of LatchTask is begin process(a,b,d) begin if b='0' then if a='1' then c<=not d;--Запись данных при b=0 и a=1[cite:183] else c<='0'; end if; end if; end process; end RTL;
+---##--ЗАДАНИЕ№4:АНАЛИЗ ФРАГМЕНТА(ПЕРЕКРЕСТНЫЕ СВЯЗИ)
+--Фрагмент:if a='0'then b<=not d;else d<=not b;end if;
+entity CrossLinksTask is Port(a:in STD_LOGIC;b,d:inout STD_LOGIC); end CrossLinksTask; architecture RTL of CrossLinksTask is begin process(a,b,d) begin if a='0' then b<=not d;--[cite:224] else d<=not b;--Перекрестная зависимость формирует элемент памяти[cite:224] end if; end process; end RTL;
+---##--ЗАДАНИЕ№7:СОСТАВЛЕНИЕ ПОВЕДЕНЧЕСКОГО VHDL-описания по таблице переходов
+Library IEEE;Use IEEE.std_logic_1164.all;Entity TOP is Port(CLR:in std_logic;D:in std_logic;CLK:in std_logic;Q:out std_logic);End TOP;Architecture Func of TOP is signal D_prev:std_logic; signal D_curr:std_logic; signal T:std_logic; begin P0:process(CLR,CLK,D) begin if CLR='1' then D_curr<='0'; D_prev<='0'; elsif rising_edge(CLK) then D_prev<=D_curr; D_curr<=D; end if; end process P0; t<=D_curr xnor D_prev; Q<=D_curr when t='1' else 'Z'; end Func;

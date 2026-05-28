@@ -1,0 +1,3 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+WARNING: "C:\Xilinx\Vivado\2018.2\data/verilog/src/unisims/FDCE.v" Line 160: Timing violation in scope /tb_pwm_controller/UUT/counter_reg[0]/TChk160_143 at time 738015 ps $recrem (negedge CLR,posedge C,(0:0:0),(0:0:0),notifier,rst_clk_enable_p,rst_clk_enable_p,CLR_dly,C_dly) 

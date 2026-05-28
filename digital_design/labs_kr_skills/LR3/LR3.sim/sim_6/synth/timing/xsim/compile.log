@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.sim/sim_6/synth/timing/xsim/tb_pwm_controller_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pwm_controller
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.srcs/sim_6/new/Task6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_pwm_controller

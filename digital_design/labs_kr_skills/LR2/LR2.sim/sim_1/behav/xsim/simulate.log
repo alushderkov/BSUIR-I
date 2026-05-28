@@ -1,0 +1,22 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Error: Error when g =9
+Time: 90 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 190 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 290 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 390 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 490 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 590 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 690 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 790 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 890 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd
+Error: Error when g =9
+Time: 990 ns  Iteration: 0  Process: /translator_tb/line__33  File: C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR2/LR2.srcs/sim_1/new/Task1_Test.vhd

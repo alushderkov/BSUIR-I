@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.sim/sim_7/synth/func/xsim/tb_reg_file_2r1w_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity reg_file_2r1w
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.srcs/sim_7/new/Task7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_reg_file_2r1w

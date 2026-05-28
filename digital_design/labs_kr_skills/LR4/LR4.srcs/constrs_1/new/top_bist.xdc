@@ -1,0 +1,58 @@
+## Clock signal (100 MHz)
+set_property PACKAGE_PIN E3 [get_ports CLK100MHZ]
+set_property IOSTANDARD LVCMOS33 [get_ports CLK100MHZ]
+create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports CLK100MHZ]
+
+## Switches
+set_property PACKAGE_PIN U9 [get_ports {SW[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {SW[0]}]
+set_property PACKAGE_PIN U8 [get_ports {SW[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {SW[1]}]
+
+## Buttons 
+set_property PACKAGE_PIN E16 [get_ports BTNC]
+set_property IOSTANDARD LVCMOS33 [get_ports BTNC]
+
+## 16 Basic LEDs 
+set_property PACKAGE_PIN T8 [get_ports {LED[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[0]}]
+set_property PACKAGE_PIN V9 [get_ports {LED[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[1]}]
+set_property PACKAGE_PIN R8 [get_ports {LED[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[2]}]
+set_property PACKAGE_PIN T6 [get_ports {LED[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[3]}]
+set_property PACKAGE_PIN T5 [get_ports {LED[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[4]}]
+set_property PACKAGE_PIN T4 [get_ports {LED[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[5]}]
+set_property PACKAGE_PIN U7 [get_ports {LED[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[6]}]
+set_property PACKAGE_PIN U6 [get_ports {LED[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[7]}]
+set_property PACKAGE_PIN V4 [get_ports {LED[8]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[8]}]
+set_property PACKAGE_PIN U3 [get_ports {LED[9]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[9]}]
+set_property PACKAGE_PIN V1 [get_ports {LED[10]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[10]}]
+set_property PACKAGE_PIN R1 [get_ports {LED[11]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[11]}]
+set_property PACKAGE_PIN P5 [get_ports {LED[12]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[12]}]
+set_property PACKAGE_PIN U1 [get_ports {LED[13]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[13]}]
+set_property PACKAGE_PIN R2 [get_ports {LED[14]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[14]}]
+set_property PACKAGE_PIN P2 [get_ports {LED[15]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {LED[15]}]
+
+## RGB LED 1 
+set_property PACKAGE_PIN K5 [get_ports RGB1_Red]
+set_property IOSTANDARD LVCMOS33 [get_ports RGB1_Red]
+set_property PACKAGE_PIN F13 [get_ports RGB1_Green]
+set_property IOSTANDARD LVCMOS33 [get_ports RGB1_Green]
+
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+set_property CFGBVS VCCO [current_design]
+set_property CONFIG_VOLTAGE 3.3 [current_design]

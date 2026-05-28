@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tb_bist_ext_func_synth.vhd" \
+"../../../../../LR4_a2.srcs/sim_1/new/tb_bist_ext.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tb_universal_counter_func_synth.vhd" \
+"../../../../../LR3.srcs/sim_5/new/Task5.vhd" \
+
+# Do not sort compile order
+nosort

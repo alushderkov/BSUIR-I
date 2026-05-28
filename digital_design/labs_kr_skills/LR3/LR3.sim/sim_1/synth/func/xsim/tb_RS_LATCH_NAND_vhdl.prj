@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tb_RS_LATCH_NAND_func_synth.vhd" \
+"../../../../../LR3.srcs/sim_1/new/Task1.vhd" \
+
+# Do not sort compile order
+nosort

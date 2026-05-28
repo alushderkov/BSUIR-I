@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.sim/sim_5/impl/func/xsim/tb_universal_counter_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity universal_counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/renuxela/my-files/bsuir/6sem/POCP/LR3/LR3.srcs/sim_5/new/Task5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_universal_counter
